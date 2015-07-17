@@ -18,7 +18,7 @@ html {
 }
 
 body {
-	background: $white;
+	background: $background1;
   font: 18px/1.4 $helvetica;
   color: $black;
 }
@@ -32,7 +32,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
-  color: $black;
+  color: $lightGrey1;
   font-weight: bold;
 
   line-height: 1.7;
@@ -61,7 +61,7 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: $lightGreen;
+  color: $orange1;
 }
 
 p {
@@ -69,11 +69,11 @@ p {
 }
 
 a {
-  color: $BESGreen;
+  color: $orange1;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $lightGreen;
+    color: $orange2;
   }
 }
 
@@ -117,17 +117,17 @@ img {
 
 .date {
   font-style: italic;
-  color: $gray;
+  color: $lightGrey2;
 }
 
 // Specify the color of the selection
 ::-moz-selection {
-  color: $black;
-  background: $lightGreen;
+  color: $darkGrey1;
+  background: $lightGrey3;
 }
 ::selection {
-  color: $black;
-  background: $lightGreen;
+  color: $darkGrey1;
+  background: $lightGrey3;
 }
 
 // Nicolas Gallagher's micro clearfix hack
@@ -156,7 +156,7 @@ img {
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $darkGreen;
+  border-bottom: 1px solid $orange1;
 
   @include mobile {
     text-align: center;
@@ -192,7 +192,7 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGreen;
+  color: $orange1;
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 500;
@@ -202,7 +202,7 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $lightGreen;
+  color: $orange2;
   font-size: 16px;
 
   @include mobile {
@@ -225,14 +225,14 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGreen;
+    color: $orange1;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
 
     @include mobile {
       margin: 0 10px;
-      color: $BESGreen;
+      color: $orange1;
     }
   }
 }
@@ -254,9 +254,9 @@ nav {
 .post {
   blockquote {
     margin: 1.8em .8em;
-    border-left: 2px solid $gray;
+    border-left: 2px solid $lightGrey1;
     padding: 0.1em 1em;
-    color: $gray;
+    color: $lightGrey1;
     font-size: 22px;
     font-style: italic;
   }
@@ -275,7 +275,7 @@ nav {
   margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  background-color: $darkGreen;
+  background-color: $orange1;
 }
 
 footer {
