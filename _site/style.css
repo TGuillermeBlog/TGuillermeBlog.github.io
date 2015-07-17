@@ -64,9 +64,9 @@ html {
 }
 
 body {
-  background: #fff;
+  background: #252525;
   font: 18px/1.4 Helvetica, Arial, sans-serif;
-  color: #000;
+  color: #e8e8e8;
 }
 
 .container {
@@ -78,7 +78,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #000;
+  color: #e8e8e8;
   font-weight: bold;
   line-height: 1.7;
   margin: 1em 0 15px;
@@ -107,7 +107,7 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: #3F735D;
+  color: #ff7400;
 }
 
 p {
@@ -115,12 +115,12 @@ p {
 }
 
 a {
-  color: #164632;
+  color: #ff7400;
   text-decoration: none;
   cursor: pointer;
 }
 a:hover, a:active {
-  color: #3F735D;
+  color: #ff9640;
 }
 
 ul, ol {
@@ -162,17 +162,17 @@ img {
 
 .date {
   font-style: italic;
-  color: #666;
+  color: #b6b6b6;
 }
 
 ::-moz-selection {
-  color: #000;
-  background: #3F735D;
+  color: #434343;
+  background: #666666;
 }
 
 ::selection {
-  color: #000;
-  background: #3F735D;
+  color: #434343;
+  background: #666666;
 }
 
 .clearfix:before,
@@ -194,7 +194,7 @@ img {
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid #164632;
+  border-bottom: 1px solid #ff7400;
 }
 @media screen and (max-width: 640px) {
   .masthead {
@@ -232,7 +232,7 @@ img {
 
 .site-name {
   margin: 0;
-  color: #164632;
+  color: #ff7400;
   cursor: pointer;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
@@ -242,7 +242,7 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: #3F735D;
+  color: #ff9640;
   font-size: 16px;
 }
 @media screen and (max-width: 640px) {
@@ -267,7 +267,7 @@ nav {
 }
 nav a {
   margin-left: 20px;
-  color: #164632;
+  color: #ff7400;
   text-align: right;
   font-weight: 300;
   letter-spacing: 1px;
@@ -275,13 +275,13 @@ nav a {
 @media screen and (max-width: 640px) {
   nav a {
     margin: 0 10px;
-    color: #164632;
+    color: #ff7400;
   }
 }
 
 .posts > .post {
   padding-bottom: 2em;
-  border-bottom: 1px solid #164632;
+  border-bottom: 1px solid #e8e8e8;
 }
 
 .posts > .post:last-child {
@@ -291,9 +291,9 @@ nav a {
 
 .post blockquote {
   margin: 1.8em .8em;
-  border-left: 2px solid #666;
+  border-left: 2px solid #e8e8e8;
   padding: 0.1em 1em;
-  color: #666;
+  color: #666666;
   font-size: 22px;
   font-style: italic;
 }
@@ -307,9 +307,9 @@ nav a {
 
 .wrapper-footer {
   margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: #164632;
+  border-top: 1px solid #252525;
+  border-bottom: 1px solid #252525;
+  background-color: #252525;
 }
 
 footer {

@@ -1,22 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>BES Macro blog</title>
-    <description>A blog about macroecology, macroevolution and everything else.</description>
-    <link>http://besmacro.github.io</link>
-    <atom:link href="http://besmacro.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <title>Blog backup</title>
+    <description>Backup blog posts from various blogs.</description>
+    <link>http://TGuillermeBlog.github.io</link>
+    <atom:link href="http://TGuillermeBlog.github.io/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>This blog rocks</title>
-        <description>&lt;p&gt;This is the first blog post!&lt;/p&gt;
+        <title>World’s ending, enough time to read this?</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/images/Furry_ball_by_aerox21.png&quot; alt=&quot;headimg&quot;&gt;
+Recently Science published &lt;a href=&quot;http://www.stonybrook.edu/sb/images/features/oleary130208.pdf&quot;&gt;O’Leary et al.’s&lt;/a&gt; – new load of oil to fuel the burning debate on the origins of placental mammals.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/Macro_final.jpg&quot; alt=&quot;_config.yml&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Just to be clear: there is an important distinction between mammals in general that includes many fossils from the Jurassic as well as the extant platypus, kangaroo and your grandma; and placental mammals that includes your grandma and the armadillo (but not kangaroos or the platypus) and no fossil before 65Myr. For readers that are not used to the debate concerning the first placental mammal here’s the main question: did the first placental mammals diversify before or after 65Myr (the important KT boundary)?&lt;/p&gt;
 
-&lt;p&gt;But there&amp;#39;s not much content... Local testing ping.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(1) After Katie&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;One view suggests that early mammals lived in the shadow of dinosaurs and the demise of these mighty creatures allowed our rat-like ancestors to take over the earth, the seas and the skies “&lt;a href=&quot;http://www.uroboras.lt/wp-content/uploads/2010/06/save.jpg&quot;&gt;Save yourself mammals&lt;/a&gt;”. This idea was proposed by &lt;a href=&quot;http://en.wikipedia.org/wiki/George_Gaylord_Simpson&quot;&gt;Simpson&lt;/a&gt; in the 1950’s and is supported by the fossil record; many dinosaurs (both big and small) were present before the 65 Myr KT boundary, then a catastrophic meteorite impact marked the KT limit and placental mammals radiated after that. This sequence of events seems to be very straightforward but reality appears not to be so simple. Increasing numbers of mammal species from the late Cretaceous are being discovered, (including &lt;a href=&quot;http://www.nature.com/nature/journal/v433/n7022/full/nature03102.html&quot;&gt;rather big ones&lt;/a&gt; feeding on dinosaurs) and not many species in general are found in the fossil record before 55Myr when all groups of placental mammals seem to suddenly appear (for a full story see &lt;a href=&quot;http://www.nature.com/nature/journal/v450/n7172/pdf/nature06277.pdf&quot;&gt;Luo’s 2007&lt;/a&gt; Nature review).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;(1) Before Katie&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In contrast, another group of people, mainly assisted by molecular dating methods, found out that post-KT placental mammalian diversification may just be an artefact of the fossil record (like &lt;a href=&quot;http://www.sciencemag.org/content/334/6055/521.full&quot;&gt;Meredith et al 2011&lt;/a&gt; in Science again). Their DNA evidence seems to say that placental mammals evolved before the KT limit and that either palaeontologists failed to find them or else the fossil record failed to preserve them. One major criticism that moderate people argue is that there are still problems associated with molecular dating methods. I won’t go into the details (yes I’m trying hard not to) but molecular dating relies on DNA on the one hand (sampling quality and modelling) and on the fossil record on the other hand. So if the people using DNA criticise the fossil record and want to improve the DNA dating estimates, they have to rely on the same fossil record that they are criticising. The snake bites his own tail.&lt;/p&gt;
+
+&lt;p&gt;So what about O’Leary and colleague’s paper? They basically support the first theory (placental mammals evolved after KT). Fair enough, it was led by a number of great palaeontologists and based on a massive morphological data set (~4500 characters introduced as phenomics (from the phenotype) as opposed to genomics (from the genome) data) collected on 40 unambiguous fossils and 46 extant placental mammals. Genomic data based on 26 genes of these extant placental mammals was also included. This paper is the result of an impressive and unique collaborative work, but – &lt;a href=&quot;http://en.wikipedia.org/wiki/Major_houses_in_A_Song_of_Ice_and_Fire#House_Stark&quot;&gt;Ned Stark&lt;/a&gt; from Games of Thrones said “nothing someone says before the word “but” really counts” –  but this paper is criticisable…&lt;/p&gt;
+
+&lt;p&gt;First of all, the data set: although the morphological data is impressive, the taxa sampling effort seems a bit weak, especially for extant placental mammals. &lt;a href=&quot;http://www.sciencemag.org/content/334/6055/521.full&quot;&gt;Meredith et al&lt;/a&gt; used the same genomic data (26 genes) but based on ~164 mammals to answer the same question. Why couldn’t O’Leary use all of this already published mammal DNA? For the second criticism, I’m just going to quote &lt;a href=&quot;http://www.sciencemag.org/content/339/6120/656&quot;&gt;Yoder’s review&lt;/a&gt; published in the same issue “Today, sophisticated theoretical and computational methods are used to estimate and calibrate molecular phylogenetic branch lengths (which represent time). Together with improved methods for integrating fossil and molecular data, dates derived from molecular phylogenies have inched closer to those implied by the fossil record. Is the approach used in the O’Leary et al. study directly comparable to these recent molecular phylogenetic studies? Not really, as it turns out.”&lt;/p&gt;
+
+&lt;p&gt;No wonder this paper supports the first theory, it is just a precise and massive analysis of the 40 species of the placental mammals fossil record. Personally, I’m really frustrated by how they managed to publish this paper. Since it’s part of my PhD research, I automatically get excited when I see fossils mixing with extant species so I really hoped this paper would link the two approaches instead of supporting the old fashioned view of evolution (the dinosaurs dying and the mammals taking over). I’d like to think that the history of life is a bit more complex and exciting…&lt;/p&gt;
+
+&lt;p&gt;A last comment to justify my title and which will be my main critique to this paper is that O’Leary et al. tried to recreate the “hypothetical placental mammal ancestor”.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/ancestral_placental-300x206.jpg&quot; alt=&quot;_config.yml&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;As I said, this paper could be seen as a summary of the placental mammal fossil record. So why did they break the first rule that keeps palaeontology away from palaeo-poetry (i.e. going too far with palaeontological hypotheses)? Here they reconstructed a whole creature using their morphological data. What they made was essentially a mean (average) placental mammal (a primitive rat-like creature) – a throw-back to the early stages of palaeontological views of mammalian evolution. What did the ancestor of a duck and a beaver look like? Something in between – a platypus for example? As &lt;a href=&quot;http://www.nature.com/news/face-to-face-with-the-earliest-ancestor-of-all-placental-mammals-1.12398&quot;&gt;Olaf Bininda-Edmonds&lt;/a&gt; said on Ed-Yong’s Nature post “comparing the two estimates is like comparing “apples and oranges”, they haven’t really done anything to resolve this on-going dispute”.&lt;/p&gt;
+
+&lt;p&gt;his paper has also caused controversy on twitter. I’ll just cite two opinions.&lt;/p&gt;
+
+&lt;p&gt;Gavin Thomas (@Phalaropus)&lt;/p&gt;
+
+&lt;p&gt;“The reconstruction is fun – I’d love to see a picture based on 95% CIs for the ancestral states.”&lt;/p&gt;
+
+&lt;p&gt;and Rich Grenyer’s answer (@rich_)&lt;/p&gt;
+
+&lt;p&gt;“yes indeed. Something like this” (see our title image).&lt;/p&gt;
+
+&lt;p&gt;Many parts of the online science community got excited about this paper, you can see further discussions on Jerry A Coyne’s blog (&lt;a href=&quot;http://whyevolutionistrue.wordpress.com/2013/02/09/the-orders-of-modern-placental-mammals-originated-after-the-extinction-of-the-dinosaurs/&quot;&gt;here&lt;/a&gt; and &lt;a href=&quot;http://whyevolutionistrue.wordpress.com/2013/02/11/more-on-placental-mammals/&quot;&gt;here&lt;/a&gt;), on Ed Yong’s one (&lt;a href=&quot;http://phenomena.nationalgeographic.com/2013/02/07/meet-the-ancestor-of-every-human-bat-cat-whale-and-mouse/&quot;&gt;here&lt;/a&gt; and h&lt;a href=&quot;http://phenomena.nationalgeographic.com/2013/02/12/every-tooth-is-correct-every-whisker-is-correct/&quot;&gt;here&lt;/a&gt;ere or &lt;a href=&quot;http://www.nature.com/news/face-to-face-with-the-earliest-ancestor-of-all-placental-mammals-1.12398&quot;&gt;there&lt;/a&gt;) or else on the twitter feed #placental.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Photo credit&lt;/strong&gt;: http://aerox21.deviantart.com/&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://www.ecoevoblog.com/2013/02/18/palaeo-poetry-and-placental-mammals/&quot;&gt;Original post&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 </description>
-        <pubDate>Mon, 22 Jun 2015 00:00:00 +0100</pubDate>
-        <link>http://besmacro.github.io/This-blog-rocks/</link>
-        <guid isPermaLink="true">http://besmacro.github.io/This-blog-rocks/</guid>
+        <pubDate>Mon, 18 Feb 2013 00:00:00 +0000</pubDate>
+        <link>http://TGuillermeBlog.github.io/Paleo-Poetry/</link>
+        <guid isPermaLink="true">http://TGuillermeBlog.github.io/Paleo-Poetry/</guid>
+      </item>
+    
+      <item>
+        <title>Hey Tree of Life! How&#39;s it growing?</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/images/800px-Flinders_redgum_near_sunset-300x201.jpg&quot; alt=&quot;headimg&quot;&gt;
+Following the influence of science writers such as S.J. Gould, I always try to look back at the historical perspectives of what I’m studying. These days I’m playing with 3Gb trees so I was delighted by &lt;a href=&quot;http://sysbio.oxfordjournals.org/content/early/2013/01/03/sysbio.sys115.full.pdf+html&quot;&gt;Mindell’s 2013&lt;/a&gt; Systematic Biology publication about the Tree of Life.&lt;/p&gt;
+
+&lt;p&gt;The idea of placing species into the so called Tree of Life emerged before the Origin of Species with works such as Augier’s Arbre Botanique (1801) (Fig. 1) and Eichwald’s tree (1829 – possibly inspired by Pallas’s 1766 work) (Fig. 1). But the spreading of such trees began only after publications of Lamarck’s scheme (1809,Fig. 2), Darwin’s famous sketched drawing (1859 – Fig. 3) and Haeckel’s beautiful tree (1866 – Fig. 2). It is only within an evolutionary framework that these representations of the relationships among organisms make sense: the idea of descent with modification.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/Fig1-Aubier1801-from_Mindell2013-fig1-211x300.jpg&quot; alt=&quot;_config.yml&quot;&gt;
+&lt;img src=&quot;/images/Fig2-Eichwald1829-from_Mindel2013-fig1-185x300.jpg&quot; alt=&quot;_config.yml&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Figure 1: Augier’s Arbre Botanique (1801) &amp;amp; Eichwald’s tree (1829) – from Mindell 2013 (Fig.1)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/Fig3-Lamarck1809-from_WikimediaCommons-193x300.jpg&quot; alt=&quot;_config.yml&quot;&gt;
+&lt;img src=&quot;/images/Fig5-Haeckel1866-from_WikimediaCommons-192x300.png&quot; alt=&quot;_config.yml&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Figure 2: Lamarck’s scheme (1809) &amp;amp; Haeckel’s tree (1866) – from Wikimedia Commons&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/Fig4-Darwin1859-from_WikimediaCommons-300x214.jpg&quot; alt=&quot;_config.yml&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Figure 3: Darwin’s Origin of Species unique figure (1859) – from Wikimedia Commons&lt;/p&gt;
+
+&lt;p&gt;From that point, we all know how the story continued; from Darwin’s sketch (Fig. 3) to modern phylogenomics (fig. 4). Our understanding of the Tree of Life progressed from Simpson’s (&lt;a href=&quot;http://en.wikipedia.org/wiki/George_Gaylord_Simpson&quot;&gt;this one&lt;/a&gt;, &lt;a href=&quot;http://en.wikipedia.org/wiki/Homer_Simpson&quot;&gt;not this one&lt;/a&gt;) cladistic methods for looking at morphological relations among vertebrates, through to the discovery of DNA, the &lt;a href=&quot;http://www.sciencedirect.com/science/article/pii/0022519365900834&quot;&gt;first molecular clock&lt;/a&gt; and, eventually, the use of complicated Bayesian stuff. Depictions of the Tree of Life evolved from something like a cypress (a nice, straight tree with Neil Armstrong at the top surrounded by monkeys and mosses and jelly fish near the roots) to a three-rooted shrub full of immense dead branches near the centre. If you look at the figures included in this  blog, the changes in our understanding of the tree are clear: a gradual reduction of anthropocentrism and inclusion of  microscopic organisms.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/Fig6-DavidAlm2011-from_DavidAlm2011-SupFig15-300x245.jpg&quot; alt=&quot;_config.yml&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Figure 4: Tree of Life from David and Alm (2011) – from David and Alm 2011 (Sup. Fig. 15)&lt;/p&gt;
+
+&lt;p&gt;So what should we do next? Should we just expand the dataset until we have all the species and all their genome plotted in the Tree of Life? Hopefully there are still lots of less boring things left to do for researchers working in this area today… Two questions are (in my mind) really important to look at: is the Tree of Life only the result of descent  with modification and what should we put in the tree?&lt;/p&gt;
+
+&lt;p&gt;For the first question, it appears more and more clear nowadays that the Tree of Life is not really a tree but rather something along the lines of a tree-shaped web. Regarding Archaea and Bacteria alone (the majority of organisms in the tree), &lt;a href=&quot;http://www.pnas.org/content/105/29/10039.short&quot;&gt;it is estimated&lt;/a&gt; that at least 81% of their genes have been laterally transferred among lineages at some time in the past. This phenomenon is also &lt;a href=&quot;http://www.annualreviews.org/doi/full/10.1146/annurev-genet-110711-155529&quot;&gt;becoming increasingly evident&lt;/a&gt; among Eukaryotes (even among vertebrates!) and recognition of these events should lead to a more web-shaped “Tree” of Life. Incidentally, it is interesting to note that Batsch recognised this web structure in plants as early as 1802 (Fig. 5).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/Fig7-Batsch1802-from_Mindel2013-fig1-300x235.jpg&quot; alt=&quot;_config.yml&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Figure 5: Batsch’s web of plants (1802) – from Mindell 2013 (Fig.1)&lt;/p&gt;
+
+&lt;p&gt;Regarding the second question, asking what can be included in the tree of life comes down to how we determine what is living. I remember one question that a classmates had in my phylogenetic lectures; “What is the out group of the tree of life?” The lecturer had just said that a tree without an out group is not valid. The resulting discussion turned into a really long (and interesting) debate about viruses – the question being whether we should put the &lt;a href=&quot;http://www.sciencedirect.com/science/article/pii/S0022519309004895&quot;&gt;viruses&lt;/a&gt; in the tree of life? We might define living organisms by entities that can replicate their own DNA. So you could argue that if viruses cannot achieve this independent replication then we should &lt;a href=&quot;http://www.nature.com/nrmicro/journal/v7/n4/abs/nrmicro2108.html&quot;&gt;prune them&lt;/a&gt; out of our tree. Haha ! But wait, it’s not so easy: although most viruses require host cells for reproduction, so do many other “living” organisms like Richettsia or Chlamydia. In addition, some viruses have many genes involved in DNA replication so how should their self-replication abilities be classed ?&lt;/p&gt;
+
+&lt;p&gt;Mindell conclude by quoting &lt;a href=&quot;http://www.bioone.org/doi/abs/10.3417/2006017&quot;&gt;Brooks and van Veller (2008)&lt;/a&gt;: “There are two choices. Do we classify a tree with [lateral transfers], or do we try to classify a [lateral transfer] network? If we wish our classifications to reflect what we think we know about evolution, it seems that we will have to opt for the first alternative.” Does this mean that we should go for a tree shaped web including viruses? Let see how the debate will go on…&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Photo credit&lt;/strong&gt;: wikimedia commons; Mindell 2013; David &amp;amp; Alm 2011&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://www.ecoevoblog.com/2013/01/11/hey-tree-of-life-hows-it-growing/&quot;&gt;Original post&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 11 Jan 2013 00:00:00 +0000</pubDate>
+        <link>http://TGuillermeBlog.github.io/Hey-Tree-Of-Life/</link>
+        <guid isPermaLink="true">http://TGuillermeBlog.github.io/Hey-Tree-Of-Life/</guid>
+      </item>
+    
+      <item>
+        <title>World’s ending, enough time to read this?</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/images/Asteroid_explosion-300x179.jpg&quot; alt=&quot;headimg&quot;&gt;
+What will happen today on the &lt;a href=&quot;http://gawker.com/5969770/your-guide-to-the-mayan-apocalypse-the-secret-planet-nibiru-and-the-end-of-the-world-which-is-happening-tomorrow&quot;&gt;last day of the world (21st)&lt;/a&gt;? Will some giant asteroid hit the Earth? Will massive tsunamis ravage all the coast lines? Will climate suddenly be way to warm for life? Will methane bubble out of the oceans and asphyxiate everybody? Or are aliens going to take over our planet?&lt;/p&gt;
+
+&lt;p&gt;We could spend a long time discussing the causes (or not !) of the end of the world. However people usually ignore the timing of this type of inevitable (or not !!) catastrophe. We all have in mind the asteroid that Alvarez and his fellows &lt;a href=&quot;http://books.google.ie/books?hl=en&amp;amp;lr=&amp;amp;id=kkHhl67ixwEC&amp;amp;oi=fnd&amp;amp;pg=PR9&amp;amp;dq=T+Rex+and+the+crater+of+doom&amp;amp;ots=g5osc7NQwx&amp;amp;sig=d0eMdwuET0PS0TPUoA6BzKZMYXU&amp;amp;redir_esc=y&quot;&gt;discovered&lt;/a&gt; – the one that wiped out in a blink of an eye the ferocious Mr. T-Rex. But what people tend to ignore/forget is the timing of such events…&lt;/p&gt;
+
+&lt;p&gt;When studying the history of life, the timing and the scale of the timing is always very important! Did the asteroid wiped out the dinosaurs? If we could watch the impact of this asteroid, would we see a herd of Triceratops peacefully grazing on the ground and then, in a blink of an eye… Nothing ?! Same for the even more massive end-Permian event, would we have seen the trilobites bubbling in the sea and then the day after a desolated planet? &lt;a href=&quot;http://www.sciencedirect.com/science/article/pii/S0169534703000934&quot;&gt;No&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;As this biological crisis appears really swift and savage in the fossil record, it does not mean that they were quick in reality. The fossil record is a random and imperfect record of time. What might look as quick as a blink of an eye could also be something as smooth and long as several million years !&lt;/p&gt;
+
+&lt;p&gt;As a French guy, I’m not putting the &lt;a href=&quot;http://en.wikipedia.org/wiki/Catastrophism&quot;&gt;Catastrophism&lt;/a&gt; vs. &lt;a href=&quot;http://en.wikipedia.org/wiki/Uniformitarianism_%28science%29&quot;&gt;Uniformitarianism&lt;/a&gt; debate back on the table. Obviously these crises were real, loads of species disappeared and in a small amount of time. But a small amount of time relative to  the fossil record, not according to the Mayan calendar !&lt;/p&gt;
+
+&lt;p&gt;So I’ll say no worries, if the Mayans were right we still will have time to enjoy Christmas turkey as well as the next couple of million years to go !&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Photo credit&lt;/strong&gt;: wikimedia commons&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://www.ecoevoblog.com/2012/12/21/worlds-ending-enough-time-to-read-this/&quot;&gt;Original post&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 21 Dec 2012 00:00:00 +0000</pubDate>
+        <link>http://TGuillermeBlog.github.io/World%E2%80%99s-ending-enough-time-to-read-this/</link>
+        <guid isPermaLink="true">http://TGuillermeBlog.github.io/World%E2%80%99s-ending-enough-time-to-read-this/</guid>
+      </item>
+    
+      <item>
+        <title>Sex on the beach?</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/images/1012_teaching_evolution2.jpg&quot; alt=&quot;headimg&quot;&gt;
+Mr Garrison taught South Park Elementary children (season 10, episode 12) the good old fashion way of seeing evolution; “we are the retarded children of some retarded frog-fish-squirrel…”. This is the gradualist way of seeing evolutionary processes; leading from uninteresting jelly fishes to the mighty Arnold Shwarzenegger.&lt;/p&gt;
+
+&lt;p&gt;Many scientists reject this gradualist view in favour of Darwin’s idea that &amp;quot;there is no innate tendency leading to progress in evolution&amp;quot;. But do they really gave up this idea? A few gradualistic events in the history of life remains firmly accepted such as how the vertebrates went out of the water. This theory refers to fossil evidence from the Late Devonian period (that’s about 350 million years ago), suggesting that early tetrapods used their legs to go out of the water and conquer the brave new terrestrial world.&lt;/p&gt;
+
+&lt;p&gt;However, during this last decade, many paleontologists (yes, they don’t just look for dinos) pointed out some disturbing facts: the early tetrapods, such as the iconic &lt;a href=&quot;http://www.nature.com/nature/journal/v486/n7404/abs/nature11124.html&quot;&gt;&lt;em&gt;Ichthyostega&lt;/em&gt;&lt;/a&gt;, were in fact not able to walk out of the water at all! So why the hell did they develop legs?&lt;/p&gt;
+
+&lt;p&gt;This question is an example of my favourite part of macroevolution: exaptations (when the function of a trait shifts during evolution). The French palaeontologist, S. Steyer, pointed out that early legs may have been used in many way before being useful to Usain Bolt: for swimming, for hunting (used to hold onto the seabed) or even... for sex! &lt;a href=&quot;http://cnrs.academia.edu/JS%C3%A9bastienSteyer&quot;&gt;S. Steyer&lt;/a&gt; suggested that legs could have been used to grab the female during sexy time as frogs do today.&lt;/p&gt;
+
+&lt;p&gt;Other interesting aspects of this gradual transition from water to land are the timing and the possible reasons why early tetrapods left the water to go conquer the new terrestrial world – which was not new at all by the way; arthropods had &lt;a href=&quot;http://www.nature.com/nature/journal/v488/n7409/abs/nature11281.html&quot;&gt;ventured out of the water&lt;/a&gt; since the early Devonian. &lt;a href=&quot;http://www.nature.com/nature/journal/v463/n7277/full/nature08623.html&quot;&gt;Recent&lt;/a&gt; tracks discovered in Poland suggest that a 50cm long &amp;quot;retarded fish-frog&amp;quot; walked on the beach in the Early-Middle Devonian, that’s 20 million years before Mr. Ichthyostega was groping his lovely wife. Niedzwiedzki and his team interpreted these tracks (and some other &amp;quot;younger&amp;quot; ones like the &lt;a href=&quot;http://jgs.lyellcollection.org/content/152/2/407.short&quot;&gt;Irish Valentia Island trackway&lt;/a&gt;) as belonging to some tetrapods that eventually went out of the sea to scavenge on the beach on low tide.&lt;/p&gt;
+
+&lt;p&gt;So was there really a graduale evolution from water to land in vertebrates? Who really made these tracks if it wasn’t &lt;em&gt;Ichthyostega&lt;/em&gt; who actually just &amp;quot;walked&amp;quot; like a walrus? Even though legs probably didn’t evolve for walking, some tetrapods may have thought that it would be fun to go on the beach for a walk and get yummy carcasses. Were their other tetrapod colleagues using their legs for less adventurous but still cool purposes such as the possibilities listed above? As an answer to these questions, let’s just say that it’s complicated and it takes more than one big step on the shore to go from the &amp;quot;retarded fish-frogs&amp;quot;...&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Photo credit&lt;/strong&gt;: South Park – season 10, episode 12&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://www.ecoevoblog.com/2012/12/10/sex-on-the-beach/&quot;&gt;Original post&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 10 Dec 2012 00:00:00 +0000</pubDate>
+        <link>http://TGuillermeBlog.github.io/Sex-On-The-Beach/</link>
+        <guid isPermaLink="true">http://TGuillermeBlog.github.io/Sex-On-The-Beach/</guid>
       </item>
     
   </channel>
