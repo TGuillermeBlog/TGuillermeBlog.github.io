@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hopsolete Trees – Blog backup – Backup blog posts from various blogs.</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+One of the most unusual benefits of being in Ireland from a Southern French PhD student’s perspective is not so much the rain and the pronounced taste for culinary oddities (some weird, some excellent) but the awesome trend towards a new age of craft beers (and I’m not mentioning the pillar of Irish pub culture).
+" />
+    <meta property="og:description" content="
+One of the most unusual benefits of being in Ireland from a Southern French PhD student’s perspective is not so much the rain and the pronounced taste for culinary oddities (some weird, some excellent) but the awesome trend towards a new age of craft beers (and I’m not mentioning the pillar of Irish pub culture).
+" />
+    
+    <meta name="author" content="Blog backup" />
+
+    
+    <meta property="og:title" content="Hopsolete Trees" />
+    <meta property="twitter:title" content="Hopsolete Trees" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Blog backup - Backup blog posts from various blogs." href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="https://raw.githubusercontent.com/TGuillermeBlog/TGuillermeBlog.github.io/master/images/antlers.jpg" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Blog backup</a></h1>
+            <p class="site-description">Backup blog posts from various blogs.</p>
+          </div>
+
+          <nav>
+            <!--
+            ADDING A PAGE
+            <a href="/your_new_page">The page name</a>
+            !-->
+            <a href="http://tguillerme.github.io/">Website</a>
+            <a href="/">Blog</a>
+            <a href="/about">About</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>Hopsolete Trees</h1>
+
+  <div class="entry">
+    <p><img src="/images/Beer_bottles-300x205.jpg" alt="headimg">
+One of the most unusual benefits of being in Ireland from a Southern French PhD student’s perspective is not so much the rain and the pronounced taste for culinary oddities (<a href="http://j8.ly/popular-irish-chinese-dish-3-in-1-fried-rice">some weird</a>, <a href="http://en.wikipedia.org/wiki/Breakfast_roll">some excellent</a>) but the awesome trend towards a new age of craft beers (and I’m not mentioning the pillar of <a href="http://en.wikipedia.org/wiki/Guinness">Irish pub culture</a>).</p>
+
+<p>Looking at the increasing beer richness available in any decent pub/off-licence, I was inspired to combine two of my passions: beer-related stuff and phylogeny-related stuff. Despite an honourable attempt by <a href="http://www.jasonleebrown.org/jasonleebrown.org/beerlogeny.html">J.L. Brown</a>, I would like to discuss the three reasons why it’s imphopsible to build a true beer phylogeny. Admittedly one of the main reasons for this impossibility is the side effect of drinking any sugar rich (at least originally) drink that has been infected by <a href="http://en.wikipedia.org/wiki/Saccharomyces_cerevisiae"><em>Saccharomyces cerevisiae</em></a>... But there are also three more theoretical reasons.</p>
+
+<p><strong>To build phylogenies, you need data.</strong></p>
+
+<p>Despite the fact that the data collection part of such a study could be great (doing your fieldwork in a pub, isn’t that cool?), I doubt the data base would actually be big enough to infer any well supported phylogenetic trees. Think about a matrix with only one character (let’s say presence or absence of bones) and with 4 species (a fly, a tuna, a pigeon and a walrus); you won’t be able to resolve the tree past the first node. Theoretically one needs at least a number of characters equal to the number of taxa (- 2 because you can cheat by ignoring the first and the last node).</p>
+
+<p>Let’s see what our data matrix looks like for beers: there are approximately <a href="http://en.wikipedia.org/wiki/Beer_style">180 different beer styles</a> out there so we need at least 178 characters to classify them. Even if some characters come readily to your mind (ABV – alcool! –, colour, ingredients, taste), I’ll bet you cannot find more than 10 of them.</p>
+
+<p><strong>To build phylogenies, you need models.</strong></p>
+
+<p>When building a phylogeny, it is important to remember that the true questions we are asking our software are something like: (1) which tree involves the minimum number of changes or (2) which is the most likely tree regarding my data?</p>
+
+<p>The first question is the cladistics approach; using an optimal criterion parameter (usually parsimony) when you’re building your tree. It states that the best tree will be the one implying the least number of changes for grouping the tips together. The second question is the probabilistic approach, which is based on fitting a model of character evolution that will be the best fit for the data.</p>
+
+<p>Going back to our brews, the question we want to ask the software will mainly depend on the assumptions we have. A cladistic approach such as the one that <a href="http://www.jasonleebrown.org/jasonleebrown.org/beerlogeny.html">Brown</a> used works as long as we have sampled enough characters back in the pub. However, unless each clade of beers has a clear pattern (e.g. only the stouts have an ABV between 4.5° and 5°) we are likely to suffer from the well-known <a href="http://en.wikipedia.org/wiki/Long_branch_attraction">Long Branch Attraction</a> artifact in some parts of the tree.</p>
+
+<p>So can we use the probabilistic method instead? Again, as long as we have enough data, this method is possible but will it give an accurate result? Well, that depends on your model of character evolution. Since we cannot use the classic <a href="http://en.wikipedia.org/wiki/Models_of_DNA_evolution">DNA evolution models</a>, we will have to build our own evolutionary model implying that we have a reasonably guessable probability of going from one state to another for any character (e.g. the probability of moving along the <a href="http://en.wikipedia.org/wiki/Standard_Reference_Method">Standard Reference Method</a> color scale).</p>
+
+<p>By the way, Spencer and Wilberg (<a href="http://onlinelibrary.wiley.com/doi/10.1111/cla.12018/full">Cladistics – 2013</a>) tested the actual evolutionary meaning of the two methods (although, they were fairly biased in favour of one of the two approaches).</p>
+
+<p><strong>To build phylogenies, you need... evolution.</strong></p>
+
+<p>A last point to this whole problem is that trying to reconstruct a realistic scenario of a clade’s evolution (i.e. a phylogeny) implies that the mechanism underlying the whole process is mainly descent with modification (but this is not exclusively necessary e.g. <a href="http://en.wikipedia.org/wiki/Evolutionary_linguistics">evolutionary linguistics</a> or <a href="http://en.wikipedia.org/wiki/Horizontal_gene_transfer">horizontal transfer</a> – see my <a href="http://www.ecoevoblog.com/2013/01/11/hey-tree-of-life-hows-it-growing/">previous blog post</a> or some more serious (awesome) views <a href="http://www.pnas.org/content/96/7/3801">here</a>, <a href="http://www.nature.com/nature/journal/v431/n7005/full/nature02848.html">here</a> or <a href="http://mbe.oxfordjournals.org/content/29/6/1545">here</a>).</p>
+
+<p>Regarding these three points, I must reluctantly abandon the idea of doing any proper beer phylogeny since it seems that a beer-types classification would look more like a massive network than a straightforward textbook example of a phylogenetic tree... To end with a more positive and less phylo-nerd point, these messy relationships between each type of beer allow us to enjoy creative, new craft beers such as <a href="http://en.wikipedia.org/wiki/Galway_Hooker_%28beer%29">Irish Pale Ales</a> or <a href="http://en.wikipedia.org/wiki/Porterhouse_Brewery">Oyster Stouts</a> which are more than the sum of every element composing their name.</p>
+
+<p>And for those that just don’t care, I’ll leave you with this excellent <a href="http://aleheads.com/2010/11/30/in-defense-of-beer-styles/">post by Barley McHops</a> from the <a href="http://aleheads.com/2010/11/30/in-defense-of-beer-styles/">aleheads</a> blog while I’m going to continue my sampling... Just in case...</p>
+
+<p><strong>Photo credit</strong>: wikimedia commons</p>
+
+<p><strong><a href="http://www.ecoevoblog.com/2014/04/11/hopsolete-trees/">Original post</a></strong></p>
+
+  </div>
+
+  <div class="date">
+    Written on April 11, 2014
+  </div>
+
+  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+
+
+
+<a href="https://github.com/TGuillerme/TGuillerme.github.io"><i class="svg-icon github"></i></a>
+
+
+
+
+<a href="https://www.twitter.com/TGuillerme"><i class="svg-icon twitter"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+  </body>
+</html>
