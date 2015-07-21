@@ -24,7 +24,7 @@ No wonder this paper supports the first theory, it is just a precise and massive
 
 A last comment to justify my title and which will be my main critique to this paper is that O’Leary et al. tried to recreate the “hypothetical placental mammal ancestor”.
 
-![_config.yml]({{ site.baseurl }}/images/ancestral_placental-300x206.jpg)
+![bodyimg]({{ site.baseurl }}/images/ancestral_placental-300x206.jpg)
 
 As I said, this paper could be seen as a summary of the placental mammal fossil record. So why did they break the first rule that keeps palaeontology away from palaeo-poetry (i.e. going too far with palaeontological hypotheses)? Here they reconstructed a whole creature using their morphological data. What they made was essentially a mean (average) placental mammal (a primitive rat-like creature) – a throw-back to the early stages of palaeontological views of mammalian evolution. What did the ancestor of a duck and a beaver look like? Something in between – a platypus for example? As [Olaf Bininda-Edmonds](http://www.nature.com/news/face-to-face-with-the-earliest-ancestor-of-all-placental-mammals-1.12398) said on Ed-Yong’s Nature post “comparing the two estimates is like comparing “apples and oranges”, they haven’t really done anything to resolve this on-going dispute”.
 

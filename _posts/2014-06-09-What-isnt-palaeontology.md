@@ -16,7 +16,7 @@ Most people that have only a vague idea of what palaeontology is are usually not
 
 Palaeontologists do not excavate fossils, that’s a job for Oryctologists. Okay, I’m being picky with the terms here but, again, the distinction is important. Most palaeontologists are also oryctologists, meaning that they go into the field and do excavations as the basis for their scientific work (yeah, in the end, that’s not a cliché, one of the nicest parts of the job is field work!). However, not all palaeontologists are oryctologists (even though most are) and many oryctologists are not palaeontologists. Again, palaeontology is not only about digging up fossils and putting them in museums (contrary to what [this song](https://www.youtube.com/watch?v=B7zo2zY1Zqg) suggests), it is about the study of changes that occurred on our planet through deep time (geography, climate, etc...) and how they affected living organisms (evolution, extinction, etc...).
 
-![_config.yml]({{ site.baseurl }}/images/JP-Digsite-300x164.jpg)
+![bodyimg]({{ site.baseurl }}/images/JP-Digsite-300x164.jpg)
 
 While we’re on the subject of oryctology, there is a huge public misconception about excavations. Most people that have seen Jurassic Park might think that, in the 90’s, one could just go into the field armed with nothing but a paint brush and happily stumble across a complete *Velociraptor* (*Deinonychus*!) skeleton which just had to be cleaned out from the surrounding layers of dust. This scenario would certainly make palaeontology way more straightforward and easy but it would also mean that excavations would be just boring routines where a hoover would do a better job than a naively enthusiastic undergrad student!
 

@@ -16,9 +16,9 @@ Returning to Lewontin’s criteria, the basic idea of species level selection is
 
 When you think about species selection it is often easy to confound it with clade selection yet Okasha draws a clear distinction between the two concepts. Clades are, by definition, monophyletic; comprised of a single ancestral species and all of its descendant species. Unlike species, clades cannot split to create new clades with ancestor-descendant relationships because any new clade will inevitably be nested within the old clade (the diagram in Okasha’s book makes all of this far clearer than my description!)
 
-![_config.yml]({{ site.baseurl }}/images/Okasha2006-Fig7.1-300x224.png)
+![bodyimg]({{ site.baseurl }}/images/Okasha2006-Fig7.1-300x224.png)
 
-Clade A is part of the larger clade B but it is not the offspring of clade B (offspring must have an independent existence from their parents and be able to outlive them).
+<center>Clade A is part of the larger clade B but it is not the offspring of clade B (offspring must have an independent existence from their parents and be able to outlive them).</center>
 
 Speciation and extinction rates are clearly not uniform; some lineages radiate into many different types of species which enjoy happy evolutionary lives (think of our arthropod-dominated world) while other evolutionary lineages produce fewer species. The question is whether these patterns are the result of species-level, macroevolutionary processes or whether emergent, species-level properties can be explained from selection acting at the genetic level. As an "acid test" for genuine species selection, Okasha proposes Elizabeth Vrba’s view that species selection must in principle (though not necessarily in practice) "be able to oppose selection at lower hierarchical levels". Otherwise species level selection merely describes processes which can also be explained from a genetic-selection stance. For example, species selection may have been involved in the evolution or maintenance of sexual reproduction; the advantages of sexuality at the species level may have outweighed the [two-fold cost of sex](http://en.wikipedia.org/wiki/Evolution_of_sexual_reproduction#Two-fold_cost_of_sex) at the individual level and therefore favour the evolution of sexual over asexual lineages.
 

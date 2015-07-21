@@ -20,13 +20,13 @@ Despite these problems, I’ve found that, in the end, the list of pros is much 
 -Another point linked to this sharing idea: it is more scientifically friendly since you can put your scans into online supplementary materials and publish them with your papers.
 -Furthermore, even if it’s a less technical point, 3D scans look pretty amazing and are excellent illustrations for your papers like this 3D ring-tailed Lemur skull:
 
-[![_config.yml](http://img.youtube.com/vi/OjDa6evXyfo/0.jpg)](http://www.youtube.com/watch?v=OjDa6evXyfo)
+[![bodyimg](http://img.youtube.com/vi/OjDa6evXyfo/0.jpg)](http://www.youtube.com/watch?v=OjDa6evXyfo)
 
 This list of pros and cons can continue on ad infinitum and ultimately all morphometric methods have both advantages and disadvantages of one kind or another. Aside from all these technical details, I think that the best part of using a scanner is the chance to play with lasers! It’s just so cool to be measuring skulls in a museum with a normal set of calipers while your scanner spits out lasers in all directions and then, by magic, the giant lemur ([*Megaladapis*](http://en.wikipedia.org/wiki/Megaladapis)) on the desk is there staring out from your computer screen.
 
-![_config.yml]({{ site.baseurl }}/images/Screen-Shot-2013-06-13-at-14.46.10-300x227.jpg)
+![bodyimg]({{ site.baseurl }}/images/Screen-Shot-2013-06-13-at-14.46.10-300x227.jpg)
 
-Megaladapis – the skull in the American Museum of Natural History is about 30cm long but only 50MB on my computer!
+<center>Megaladapis – the skull in the American Museum of Natural History is about 30cm long but only 50MB on my computer!</center>
 
 **Photo credit**: Thomas Guillerme.
 
