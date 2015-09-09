@@ -1,9 +1,6 @@
-# BES Macro
+# Blog tips
 
-## [British Ecological Society](http://www.britishecologicalsociety.org/) Macro(ecology) Special Interest Group
-
-![BES Macro logo](https://github.com/BESMacro/BESMacro/blob/master/Macro_final.jpg)
-
+###### This is just the readme from the MacroBlog.
 
 ## How does it work?
 ###### Just a few notes on how it works. Delete these section when proper release.
