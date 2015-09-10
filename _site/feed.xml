@@ -7,6 +7,296 @@
     <atom:link href="http://TGuillermeBlog.github.io/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>The Skeleton in the Closet</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/images/IMG_1618.JPG&quot; alt=&quot;headimg&quot;&gt;
+After a few &lt;a href=&quot;http://www.ecoevoblog.com/2014/10/13/phd-positive-happy-developments/&quot;&gt;ups&lt;/a&gt; and &lt;a href=&quot;http://www.ecoevoblog.com/2014/10/06/phd-pretty-huge-disaster/&quot;&gt;downs&lt;/a&gt;, everything you always wanted to know about the effect of missing data on recovering topology using a Total Evidence approach is now &lt;a href=&quot;http://www.sciencedirect.com/science/article/pii/S1055790315002547&quot;&gt;available online (Open Access)&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;This paper also treats many different questions that people might be interested in (Bayesian vs. ML; how to compare tree topologies; comparing entire distributions, not only their means and variance; and many more!) but I’ll leave it to you to discover it…&lt;/p&gt;
+
+&lt;p&gt;Back on track, more than one an a half CPU centuries of calculation ago, &lt;a href=&quot;http://nhcooper123.github.io/&quot;&gt;Natalie&lt;/a&gt; and myself wanted to build a &lt;a href=&quot;http://www.ecoevoblog.com/2013/03/29/dinosaurs-are-useless-if-they-dont-go-in-trees/&quot;&gt;Total Evidence tip-dated primates tree&lt;/a&gt;. The &lt;strong&gt;Total Evidence method&lt;/strong&gt; is the method that allows you to combine both living and fossil species (or actually, read &amp;quot;both molecular and morphological data&amp;quot;&amp;#39;&amp;#39;&amp;quot;) into the same phylogenies. The &lt;strong&gt;tip-dating method&lt;/strong&gt;, is an additional method that uses the age of the tips rather than the age of the nodes for dating such a tree. But I’m not going to talk about that in this post.&lt;/p&gt;
+
+&lt;p&gt;At the start of the project, we were both confident about the idea behind it and that primates would be the ideal group for such work since they are so well studied. A study that I described in a &lt;a href=&quot;http://www.ecoevoblog.com/2014/01/13/a-brave-new-world-of-monkeying-around-with-trees/&quot;&gt;former post&lt;/a&gt; also came out around the same time, encouraging us and comforting us in this project.&lt;/p&gt;
+
+&lt;p&gt;However, as you might guess, something went wrong, horribly wrong! For the Total Evidence method, we need molecular data for living species (&lt;a href=&quot;http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0049521&quot;&gt;check&lt;/a&gt;) morphological data for fossils species (&lt;a href=&quot;http://www.nature.com/nature/journal/v498/n7452/full/nature12200.html&quot;&gt;check&lt;/a&gt;) and also for living species (che… No, wait)! After looking at the available data, we quickly found out that there was a crucial lack of living taxa with available morphological data (check our preprint to be submitted to Biology Letters putting the actual numbers on the problem). From that problem, rose the idea of actually testing how that would influence our analysis. And funnily enough, this problem become one of the two major parts of my PhD!&lt;/p&gt;
+
+&lt;p&gt;Running thorough (and loooooong) simulations, we assessed the impact of missing data on topology when using a Total Evidence method. We looked at three parameters where data would be missing:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The first one, was obviously the one I introduced above: the &lt;strong&gt;number of living taxa with no available morphological data&lt;/strong&gt; (at all!).&lt;/li&gt;
+&lt;li&gt;The second one, was the &lt;strong&gt;amount of available data in the fossil record&lt;/strong&gt; (because yes, fossils can be a bit patchy).&lt;/li&gt;
+&lt;li&gt;And the third one, the &lt;strong&gt;overall amount of morphological characters&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We then compared the effect of different levels of available data for each parameter individually and and their combination on recovering the correct topology, using both Maximum Likelihood and Bayesian Inference. For the correct topology, we used the tree that had no missing data in our simulations. For each parameter combination, we measured the clades in common between the correct topology and the trees with missing data as well as the placement of wild-card taxa (typically fossils jumping everywhere).&lt;/p&gt;
+
+&lt;p&gt;Unsurprisingly, we found that the number of living taxa with no available morphological data was the most important parameter for recovering a good topology. In fact, once you go past 50% living taxa with no morphological data, the two other parameters have no effect at all, even if you have a perfect or a really bad fossil record or many or really few characters. This is kind of intuitive when you think about it because the only way to branch the fossils to living taxa is to use the morphological data. Therefore, if there are no morphological data for the living taxa, the fossils cannot branch with them regardless of the quality of the data. Therefore, in this paper, we argue that to improve our topologies in Total Evidence, we should visit more Natural History museums. And not only the exciting fossil collections but the well curated collections of living species as well!&lt;/p&gt;
+
+&lt;p&gt;All the code for this paper is available on &lt;a href=&quot;https://github.com/TGuillerme/Total_Evidence_Method-Missing_data&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;http://www.slideshare.net/ThomasGuillerme/total-evidence-phylogenies-the-missing-data-issue&quot;&gt;latest presentation&lt;/a&gt; about both papers.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Paper 1&lt;/strong&gt;: Guillerme &amp;amp; Cooper 2015 – E&lt;em&gt;ffects of missing data on topological inference using a Total Evidence approach&lt;/em&gt; – Molecular Phylogenetic and Evolution (&lt;a href=&quot;http://dx.doi.org/10.1016/j.ympev.2015.08.023&quot;&gt;doi:10.1016/j.ympev.2015.08.023&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Paper 2 (preprint)&lt;/strong&gt;:  Guillerme &amp;amp; Cooper 2015 – &lt;em&gt;Assessment of cladistic data availability for living mammals&lt;/em&gt; – bioRxiv (&lt;a href=&quot;http://biorxiv.org/content/early/2015/07/28/022970&quot;&gt;doi: http://dx.doi.org/10.1101/022970&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Photo credit&lt;/strong&gt;: Thomas Guillerme (AMNH collections)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://www.ecoevoblog.com/2015/09/10/the-skeleton-in-the-closet/&quot;&gt;Original post&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 10 Sep 2015 00:00:00 +0100</pubDate>
+        <link>http://TGuillermeBlog.github.io/Skeleton-in-the-Closet/</link>
+        <guid isPermaLink="true">http://TGuillermeBlog.github.io/Skeleton-in-the-Closet/</guid>
+      </item>
+    
+      <item>
+        <title>Evolution is – surprise! – Darwinian!</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/images/800px-Human_pidegree-257x300.jpg&quot; alt=&quot;headimg&quot;&gt;
+I sometime come across papers that I missed during their publication time and that shed a new light on my current research (or strengthen the already present light). Today it was &lt;a href=&quot;http://onlinelibrary.wiley.com/doi/10.1002/evan.21324/abstract&quot;&gt;Cartmill’s 2012 Evolutionary Anthropology&lt;/a&gt; – not open access, apologies...&lt;/p&gt;
+
+&lt;p&gt;Cartmill raises an interesting question from an evolutionary point of view: &amp;quot;How long ago did the first [&lt;em&gt;insert your favorite taxa here&lt;/em&gt;] live?&amp;quot;. This question is crucial for any macroevolutionary study (or/and for the sake of getting a chance to be published in Nature). If one is studying the &amp;quot;rise of the age of mammals&amp;quot; (just &lt;a href=&quot;http://www.ecoevoblog.com/2014/10/29/say-the-rise-of-the-age-of-mammals-again-i-double-dare-you/&quot;&gt;for example&lt;/a&gt; of course) the question of the exact timing is crucial to see whether placental mammals evolved after or before the extinction of avian dinosaurs.&lt;/p&gt;
+
+&lt;p&gt;Because Cartmill published in &lt;em&gt;Evolutionary Anthropology&lt;/em&gt; let’s replace [&lt;em&gt;insert your favorite taxa here&lt;/em&gt;] with humans. He proposes to answer to the question &amp;quot;How long ago did the first humans live?&amp;quot; by looking at the different ways people have addressed it through time. It all starts back with Simpson’s quantum evolution stating that clades share &amp;quot;adaptive shifts&amp;quot; or &amp;quot;adaptive trends&amp;quot;. For example, for humans, that will be bipedalism and an increase in brain size: &amp;quot;Everybody can sort humans out instantly from other sorts of things: [...] they share a unique reliance on technology, a capacity for culture, and a gift for gab.&amp;quot;&lt;/p&gt;
+
+&lt;p&gt;This is an unfortunate classical view of evolution based on morphological data leading to a series of morphological discontinuities – the adaptive shifts (&amp;quot;human origins, primate origins, mammal origins, amniote origins, and so on&amp;quot; – I already discussed this gradualistic view about &lt;a href=&quot;http://www.ecoevoblog.com/2012/12/10/sex-on-the-beach/&quot;&gt;tetrapod origins&lt;/a&gt;). Cartmill uses a pertinent quote from Simpson to comment this trend: &amp;quot;Is this not, in fact, simply a recrudescence of the old naïve conception of a &lt;a href=&quot;http://en.wikipedia.org/wiki/Great_chain_of_being&quot;&gt;&lt;em&gt;scala naturae&lt;/em&gt;&lt;/a&gt;[?]&amp;quot;. However, this raises a cladistic problem. Assuming we have the data on the oldest human. What defines his or her humanness? &amp;quot;Humanness [whatever that means] is not a coherent package. We have known since the 1960s that our terrestrial bipedality evolved more than two million years before the onset of what was long held to be the fundamental human characteristic, that is the great development of the brain.’’&lt;/p&gt;
+
+&lt;p&gt;Cartmill’s point is that, morphologically, there is no adaptive shift or trend that can define any group. Morphological evolution acts more like a succession of slow and discrete incremental changes rather than the &lt;a href=&quot;http://en.wikipedia.org/wiki/Quantum_evolution&quot;&gt;Simpsonian quantum model&lt;/a&gt;: &amp;quot;there is only a long, geologically slow cascade of accumulating small apomorphies&amp;quot; and adaptive trends or shifts within clades &amp;quot;are fantasies, born ultimately of our wish to see ourselves as more decisively set off from other animals than we actually are.&amp;quot;&lt;/p&gt;
+
+&lt;p&gt;Will I have to rethink my current project looking at mammals morphological evolution? Well by &lt;a href=&quot;http://www.ecoevoblog.com/2014/01/13/a-brave-new-world-of-monkeying-around-with-trees/&quot;&gt;using molecular data as well as morphological data&lt;/a&gt; we can accurately trace back the small incremental changes (the DNA mutations) as well as the actual changes in morphology through time. My PhD is not just a series of &lt;a href=&quot;http://www.ecoevoblog.com/2014/10/06/phd-pretty-huge-disaster/&quot;&gt;failures&lt;/a&gt; after all!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Photo credit&lt;/strong&gt;: wikimedia commons&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://www.ecoevoblog.com/2015/03/27/evolution-is-surprise-darwinian/&quot;&gt;Original post&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 27 Apr 2015 00:00:00 +0100</pubDate>
+        <link>http://TGuillermeBlog.github.io/Evolution-is-darwinian/</link>
+        <guid isPermaLink="true">http://TGuillermeBlog.github.io/Evolution-is-darwinian/</guid>
+      </item>
+    
+      <item>
+        <title>Do you speak Yamnaya?</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/images/Pieter_Bruegel_the_Elder_-_The_Tower_of_Babel_Vienna_-_Google_Art_Project_-_edited-300x220.jpg&quot; alt=&quot;headimg&quot;&gt;
+I bet you do!&lt;/p&gt;
+
+&lt;p&gt;One nice non-biological thing you can do with phylogenetics (&lt;a href=&quot;http://www.ecoevoblog.com/2014/04/11/hopsolete-trees/&quot;&gt;unlike beers&lt;/a&gt;) is study the evolution of languages. If you aren’t familiar with &lt;a href=&quot;http://en.wikipedia.org/wiki/Evolutionary_linguistics&quot;&gt;evolutionary linguistics&lt;/a&gt;, it’s basically the same principles that we use to study the descent with modification of organisms but applied to words. Even though words do not evolve in a biological way, we can still apply similar phylogenetic principles by just adjusting the evolutionary models.&lt;/p&gt;
+
+&lt;p&gt;OK but let’s go back to my assumption (that you do speak Yamnaya). Since you are reading this blog post that I’m trying to write in English, you do speak English which is part of the linguistic family (or clade) called the Indo-European that consists of the vast majority of the European and Indian languages spoken by a good 3 billion people (as the name originally suggests- check this &lt;a href=&quot;http://www.sssscomic.com/comic.php?page=196&quot;&gt;excellent visual phylogenetic summary&lt;/a&gt;). Even though it is not straightforward to see the similarities between Icelandic and Indi, evolutionary linguistics suggest that both languages have diverged from the same language based on words and grammar similarities. This language, generically called proto-Indo-European is estimated to have originated either around 9000 years ago in the Middle-East and spread across India and Europe along with agriculture (the &amp;quot;Anatolian hypothesis&amp;quot;). Or, a second theory postulates its origin around 5000 years ago on the northern shores of the Black Sea and its subsequent spread along with horse riding and wheeled transport (the &amp;quot;steppe hypothesis&amp;quot;).&lt;/p&gt;
+
+&lt;p&gt;Until last month, both hypotheses were lacking data to explain some crucial temporal problems: the proto-Indo-European language contains words related to wheeled vehicles which were not invented 9000 years ago therefore potentially falsifying the &amp;quot;Anatolian hypothesis&amp;quot;. However, DNA studies did support it with a common ancestral population to Indo-European speakers dated around 9000 years ago. Also on the DNA side, no clear evidence for population dispersion was available for supporting a later origin and faster spread of the proto-Indo-European (the &amp;quot;steppe hypothesis&amp;quot;).&lt;/p&gt;
+
+&lt;p&gt;But that was only until this month: a recent paper by Haak along with his 39 co-authors preprinted in &lt;a href=&quot;http://biorxiv.org/content/early/2015/02/10/013433&quot;&gt;BioRxiv&lt;/a&gt; provides evidence for a common ancestral population that originated in the Ukraine and spread at into northern and western Europe. This population links in space and time with the &lt;a href=&quot;http://en.wikipedia.org/wiki/Yamna_culture&quot;&gt;Yamnaya culture&lt;/a&gt; around 4000-5000 years ago suggesting that Yamnaya was close to the proto-Indo-European culture. Even though if the ‘Anatolian hypothesis’ cannot be excluded, this new paper strongly suggests that at least the European branch of the Indo-European language originated from the Yamnaya culture (see Extended Data Figure 5 p.32 and its legend p.27 of the preprint pdf for a &lt;a href=&quot;http://biorxiv.org/content/biorxiv/early/2015/02/10/013433.full.pdf&quot;&gt;nice visual summary&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Therefore it is likely enough that Yamnaya was the origin of most European languages and that it spread rapidly through northern and western Europe probably due to technical advancements in transport. I find evolutionary linguistic always amazing when you can state that you wrote/read a blog post in a derived Yamnaya language: English.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Photo credit&lt;/strong&gt;: wikimedia commons&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://www.ecoevoblog.com/2015/03/13/do-you-speak-yamnaya/&quot;&gt;Original post&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 13 Mar 2015 00:00:00 +0000</pubDate>
+        <link>http://TGuillermeBlog.github.io/Do-you-speak-Yamnaya/</link>
+        <guid isPermaLink="true">http://TGuillermeBlog.github.io/Do-you-speak-Yamnaya/</guid>
+      </item>
+    
+      <item>
+        <title>The more the better?</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/images/birds-of-paradise-300x200.jpg&quot; alt=&quot;headimg&quot;&gt;
+These days I’m writing up the discussion of my sensitivity analysis paper on missing data using the Total Evidence method (more about it &lt;a href=&quot;http://www.ecoevoblog.com/2014/10/06/phd-pretty-huge-disaster/&quot;&gt;here&lt;/a&gt; and &lt;a href=&quot;http://www.ecoevoblog.com/2014/10/13/phd-positive-happy-developments/&quot;&gt;here&lt;/a&gt;). One evident opening for proposing future improvement on my analysis is the obvious &amp;quot;let’s-do-it-again-with-more-data&amp;quot; one... But a recent &lt;a href=&quot;http://www.sciencemag.org/content/346/6215/1320.abstract&quot;&gt;Science paper&lt;/a&gt; by Jarvis et al made me reconsider that. Is more the always better?&lt;/p&gt;
+
+&lt;p&gt;Jarvis and his numerous colleagues just published one of the biggest bird phylogenies that contrasts with the previous reference one (by &lt;a href=&quot;http://www.nature.com/nature/journal/v491/n7424/abs/nature11631.html&quot;&gt;Jetz et al in Nature&lt;/a&gt;). In Jetz’s paper, the authors were interested in the relations among modern birds (read &amp;quot;non-dinosaurs ones&amp;quot;) and tackled the question by trying to sample the whole of bird biodiversity (9,993 species!). However, as in most analyses of this kind, the molecular data can be fairly poor (note that they still managed to collect a maximum of 15 genes for 6663 species). Even though the global picture of avian diversity is clear, some regions are less resolved than others and an obvious way to fix that would be to sample more genes per species. And that is, in a way, exactly what Jarvis and his colleagues tried to achieve.&lt;/p&gt;
+
+&lt;p&gt;In this new study, the authors went on sampling not 15, 70 or 150 genes but 8251 genes per species! This led to a really deep and long analysis – over 400 CPU years, and I thought 150 was long! – of the complete genome of birds. By the way, they use the name Total Evidence nucleotide tree (TENT) to design the results of their analysis which is pretty confusing since a total evidence tree means &lt;a href=&quot;http://www.ecoevoblog.com/2014/01/13/a-brave-new-world-of-monkeying-around-with-trees/&quot;&gt;something quite different&lt;/a&gt; to me. But that’s just a semantic rant. Using this massive TENT, the authors fixed some previously poorly resolved nodes, redefined the names of ancient divergences among birds (with the Passerea – tits and relatives – and the Columbea – pigeons and relatives), demonstrated an explosive (&amp;quot;big-bang&amp;quot;) radiation after the K-T event and determined the patterns of certain traits evolution (such as raptoriality or vocal learning). In short a thorough work that allowed the authors to say: &amp;quot;The conflict we observe with other data types can no longer be considered to be due to error from smaller amounts of sequence data&amp;quot;. I feel that writing something like that in a paper is a nice achievement!&lt;/p&gt;
+
+&lt;p&gt;However – don’t get me wrong, this paper is yet a great example of collaborative work and insight in new methods – the sample size is... 45 species. In other words, Jetz et. al sampled 100% of the species but less than 1% of the data as for Jarvis et al., they sampled 100% of the data for less than 1% of the species. In this case, we have two extreme views of the same question (&amp;quot;how did avian diversity evolve?&amp;quot;) and in both cases, I think the macroevolutionary claims are weakened by the number of species or the amount of data... However, from a practical point of view, I think the method that included more species will be preferred by researchers since their species of interest are more likely to be present in that tree. What’s the best balance? Full genome or full sampling? I’ll leave it to you to decide...&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Photo credit&lt;/strong&gt;: http://everythingbirdsonline.com/&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://www.ecoevoblog.com/2015/02/06/the-more-the-better/&quot;&gt;Original post&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 06 Feb 2015 00:00:00 +0000</pubDate>
+        <link>http://TGuillermeBlog.github.io/The-more-the-better/</link>
+        <guid isPermaLink="true">http://TGuillermeBlog.github.io/The-more-the-better/</guid>
+      </item>
+    
+      <item>
+        <title>Ecology of religious beliefs</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/images/Leese_CRU-T-shirt_09-300x300.jpg&quot; alt=&quot;headimg&quot;&gt;
+It is well known that your country of birth has a big influence on your religious outlook. That’s why Ireland is dominated by Christians whereas Iran has a mostly Muslim population. Your scientific outlook doesn’t escape from this either.&lt;/p&gt;
+
+&lt;p&gt;For instance, it’s arguable that the idea of &lt;a href=&quot;http://www.ecoevoblog.com/2014/02/03/levels-of-selection/&quot;&gt;group selection&lt;/a&gt; is viewed much more favourably in the US than the UK. Turning back to religion, a group of authors have recently carried out a study on the &lt;a href=&quot;http://www.pnas.org/content/111/47/16784.abstract&quot;&gt;ecology of religious belief&lt;/a&gt;. In their work they were able to predict the societies that believe in moralising high Gods by drawing on historical, social and ecological data.&lt;/p&gt;
+
+&lt;p&gt;As we’re in the beginning, we need a definition, so what exactly is a moralizing high God? These are &amp;quot;supernatural beings believed to have created or govern all reality, intervene in human affairs, and enforce or support human morality&amp;quot;. Supernatural belief has had a number of ecological correlates associated with it and this study points to environmental instability as one major driver. An environment with an unpredictable spatial or temporal distribution of resources lends itself to cultivating cooperation among the animals found within it. Among humans this results in a &amp;quot;reduction in cheating, increased fairness, and a tendency to cooperate&amp;quot;. And this is a fertile ground for the development of religious belief. One conclusion is that cultures in close proximity or those that share a common language exhibit similar religious beliefs.&lt;/p&gt;
+
+&lt;p&gt;However, the authors nuance this statement that this form of religion is being driven as a response to environmental harshness. In fact, they note that for societies living in a really harsh environment like the Inuits, variations tend to lead to more positive periods rather than negative ones and this seems to inversely correlate with the probability of believing in these type of gods.&lt;/p&gt;
+
+&lt;p&gt;One ironic point however (largely discussed in &lt;a href=&quot;http://whyevolutionistrue.wordpress.com/2014/11/18/the-ecology-of-faith-what-makes-societies-religious/&quot;&gt;Jerry Coyne’s blog post&lt;/a&gt;), is that this paper is also influenced by the authors’ societal framework: a society traditionally believing in a god that they consider as moral and improving human lives. Taking that into account, some parts of the methodology heavily influence the results. The definition of morality by the authors and its benefits on humans as a species are highly depend on the societal framework where one is born. The &amp;quot;reduction in cheating, increased fairness, and a tendency to cooperate&amp;quot; is traditionally seen as a &amp;quot;good&amp;quot; thing for humanity in Abrahamic religions. Making it a universal or biological &amp;quot;right&amp;quot; behaviour is only the authors’ point of view (and probably one of &lt;a href=&quot;https://whyevolutionistrue.files.wordpress.com/2014/11/screen-shot-2014-11-18-at-7-33-18-am.png?w=565&amp;amp;h=167&quot;&gt;their funding agencies&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Photo credit&lt;/strong&gt;: http://mattleese.blogspot.ie/2009/12/we-dont-know-if-jesus-ever-rode-them.html&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://www.ecoevoblog.com/2015/01/13/ecology-of-religious-beliefs/&quot;&gt;Original post&lt;/a&gt;&lt;/strong&gt; co-written with Adam Kane&lt;/p&gt;
+</description>
+        <pubDate>Tue, 13 Jan 2015 00:00:00 +0000</pubDate>
+        <link>http://TGuillermeBlog.github.io/Ecology-and-religious-believes/</link>
+        <guid isPermaLink="true">http://TGuillermeBlog.github.io/Ecology-and-religious-believes/</guid>
+      </item>
+    
+      <item>
+        <title>Say &quot;the rise of the age of mammals&quot; again, I double dare you!</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/images/save-300x276.jpg&quot; alt=&quot;headimg&quot;&gt;
+In biology and among biologists, we like to use terms that we know are not correct but that still come in handy when you’re confident that your interlocutor understands them the way you do. I’m thinking of terms such as &amp;quot;key adaptations&amp;quot;, &amp;quot;living fossils&amp;quot;, etc... However, among them, there is one that particularly bugs me and makes me feel like Samuel L. Jackson in the iconic &lt;a href=&quot;https://www.youtube.com/watch?v=yvEik9N_xWI&quot;&gt;Pulp Fiction scene&lt;/a&gt; and that is: &amp;quot;the rise of the age of mammals&amp;quot;.&lt;/p&gt;
+
+&lt;p&gt;Recently, Barry Lovegrove and his students published a nice &lt;a href=&quot;http://rspb.royalsocietypublishing.org/content/281/1796/20141304.abstract&quot;&gt;data driven paper&lt;/a&gt; in Proceedings of the Royal Society B on the hibernation of tenrecs. The team found that these amazing creatures (I refer you to &lt;a href=&quot;http://www.ecoevoblog.com/?s=Sive+Finlay+tenrec&quot;&gt;Sive’s posts&lt;/a&gt;, our tenrec expert) do go into hibernation for 9 months straight even though they live in tropical latitudes. The paper first sparked my curiosity because of this new tenrec fact but also due to the spin that the authors put on the paper’s results. They create a broad significance for the implications of their research on hibernation in tenrecs by describing their potential applications for how we might biologically programme astronauts to hibernate on a journey to Mars.&lt;/p&gt;
+
+&lt;p&gt;But what struck me the most (and I’m coming to main point of this blog post) is that the authors place their paper in the context of our understanding of the K-T boundary event which, they argue, was a key event in the evolutionary radiation of placental mammals (according to work by O’Leary and colleagues discussed &lt;a href=&quot;http://www.ecoevoblog.com/2013/02/18/palaeo-poetry-and-placental-mammals/&quot;&gt;here&lt;/a&gt; and &lt;a href=&quot;http://www.ecoevoblog.com/2013/02/18/palaeo-poetry-and-placental-mammals/&quot;&gt;here&lt;/a&gt;). And from there, the authors claim that tenrecs’ &amp;quot;predation-avoidance  hibernation may be an ancient plesiomorphic characteristic in mammals and is a legacy, perhaps, of the 163 Myr of ecological suppression by the dinosaurs. It enabled the ancestral placentals, as well as the marsupials and monotremes [...], to endure the short- and long-term devastations of the K-Pg asteroid impact, a capacity which is possibly the sole explanation for the existence of mammals today.&amp;quot;&lt;/p&gt;
+
+&lt;p&gt;This suggestion is based solely on their findings about hibernation in tenrecs. Their rather crude extrapolations to what these results tell us about the origin of placental mammals are mainly based on two erroneous assumptions:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;(1) they &amp;quot;report a plesiomorphic (ancestral) capacity for long-term hibernation that exists in an extant, phylogenetically basal, tropical placental mammal, the common tenrec&amp;quot;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;(2) &amp;quot;The long ca. 160 Myr stint of the nocturnal, small, insectivorous mammal was over, and gave way to the age of the mammals, the Cenozoic&amp;quot; because of the &amp;quot;Ecological release from the vice grip which the dinosaurs held over Mesozoic mammals&amp;quot;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;(1) Tenrecs are &lt;a href=&quot;http://en.wikipedia.org/wiki/Afrotheria&quot;&gt;Afrotherians&lt;/a&gt;. They are a sister group of golden moles and nested somewhere within the elephant shrews and aardvarks clade that is sister to the elephants, hyrax and sirenians (so, even within Afrotherians, tenrecs are not particularly basal). Afrotherians are a sister group to either Xenarthrans or Boreoeutherians (depending on the genomic region) but all three together form the extant eutherians. It is mistaken to interpret tenrecs as a &amp;quot;basal&amp;quot; mammal clade. The authors claim that their &amp;quot;hibernation data show some affinities to the ‘protoendothermy’ first noted in echidnas, suggesting retention of plesiomorphic characteristics of hibernation on Madagascar through phylogenetic inertia&amp;quot;. This implies that this hibernation characteristic has been lost in all other mammal groups .Using basic principles of parsimony, it would make more sense to attribute this hibernation characteristic to being yet another example of a convergent trait in tenrecs, not an ancestral state which was lost in most other mammals.&lt;/p&gt;
+
+&lt;p&gt;(2) I grew up reading a steady diet of books about the history of life. These presented a nicely summarized picture: around 65.5 Mya (now updated to 66 Mya, a small detail that can easily be fixed), all dinosaurs went extinct because they were too big and too stupid and the clever small mammals survived without any problem, liberated from their domination by the big stupid dinosaurs. This vision was awesome as a child; it had all the elements for a really anthropocentric/biblical view of the story (think about the &lt;em&gt;Exodus&lt;/em&gt;) and clearly explained why mammals are the dominant species today. It even explains the success of humans: we used our cooperation and intelligence to reach our dominant position as head of all the mammals.&lt;/p&gt;
+
+&lt;p&gt;However, this romantic vision of the history of life (driven by paleontological data prior to the amazing discoveries of new Jurassic and Cretaceous mammals in the 90s and 2000s and the advent of molecular phylogenies) has, thankfully, been updated to integrate the last two decades of excellent work. This lead to a picture that is less romantic and more complex. The dinosaurs didn’t really disappear and are actually still more numerous (species richness-wise) than mammals nowadays. Similarly, the placental mammals and their ancestor didn’t just &amp;quot;bloom&amp;quot; after the K-T boundary event: they had their origin back in the late Jurassic, roughly at the same time as the dominant tetrapods of today (the birds), and they radiated multiple times: mainly due to global climatic changes during the Paleogene such as the &lt;a href=&quot;http://en.wikipedia.org/wiki/Eocene%E2%80%93Oligocene_extinction_event&quot;&gt;&amp;quot;Grande Coupure&amp;quot;&lt;/a&gt; or the &lt;a href=&quot;http://en.wikipedia.org/wiki/Paleocene%E2%80%93Eocene_Thermal_Maximum&quot;&gt;PETM&lt;/a&gt;...&lt;/p&gt;
+
+&lt;p&gt;I’m not sure why the authors chose to adopt an outdated vision of the evolution of mammals to introduce their work but it seems a pity to me that such a spin is necessary to present good work on unknown/understudied groups even if they’re as cool as tenrecs!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Photo credit&lt;/strong&gt;: http://www.smbc-comics.com/?id=1535&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://www.ecoevoblog.com/2014/10/29/say-the-rise-of-the-age-of-mammals-again-i-double-dare-you/&quot;&gt;Original post&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 29 Oct 2014 00:00:00 +0000</pubDate>
+        <link>http://TGuillermeBlog.github.io/Rise-of-mammals/</link>
+        <guid isPermaLink="true">http://TGuillermeBlog.github.io/Rise-of-mammals/</guid>
+      </item>
+    
+      <item>
+        <title>PhD – Positive, Happy, Developments</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/images/RightOrWrong1921-225x300.png&quot; alt=&quot;headimg&quot;&gt;
+This post follows on directly from my &lt;a href=&quot;http://www.ecoevoblog.com/2014/10/06/phd-pretty-huge-disaster/&quot;&gt;previous discussion&lt;/a&gt; of my PhD going wrong. As a brief summary of the previous episode: I ran time consuming simulations that took me around 6 month to design and another 6 months to run. The simulation failed in the end because of a bug in some of the software I was using.&lt;/p&gt;
+
+&lt;p&gt;Therefore, I had to run them all over again!  That took me one day (at least to relaunch it, the simulations are actually still running). In this post I’d like to focus on the importance of starting to enforce good habits in using computers from the start of your PhD, whether you’re doing bioinformatics or field ecology.&lt;/p&gt;
+
+&lt;p&gt;Coding facilitates life. A lot. If I could only offer two tricks to remember they would be:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Writing function-based scripts:&lt;/strong&gt; which involves isolating functions (the bits that are actually doing stuff) from scripts in order to be able to reuse/modify them easily for further/new analysis.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Using version control:&lt;/strong&gt; which involves saving your work as you modify it and keeping a good track of the history so that when something goes wrong you know exactly which one was the last version that worked and which is the version that bugs.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There are loads of other good tips and many excellent blogs about how to start good coding habits (for example, &lt;a href=&quot;http://nicercode.github.io/&quot;&gt;this one&lt;/a&gt; or &lt;a href=&quot;http://software-carpentry.org/blog/index.html&quot;&gt;that one&lt;/a&gt;) so I am not going to develop the point here.&lt;/p&gt;
+
+&lt;p&gt;I’ll just try to make the point by using a philosophical-historical-dodgy example that convinced me to start coding. Coding is like using a printing press vs. a pencil to write a sentence: &lt;em&gt;I can write this sentence of 71 characters in approximately 16 seconds&lt;/em&gt;. And that is, with a pencil. If I had to use a printing press, it would take me one second to input each character in the press (assuming I trained a lot) plus one seconds for actually pressing the sentence. So that’s 16 seconds with a pencil and 72 seconds using the printing press (4.5 times longer). If you’re not that old-school, you will use a computer to analyse your data and what often happens is that it will take you less time to do things &amp;quot;by hand&amp;quot; (e.g. modifying column names, removing rows with NAs, etc...) than to write fancy functions. So why bother?&lt;/p&gt;
+
+&lt;p&gt;Well it’s the same as using the printing press, if you just want to write the sentence once, then, sure, don’t bother, but if you need to write it 10 times? The writing would take 160 seconds and the printing takes only 81! Also you’re likely to make typos when copying the sentence with a pencil, but you won’t make any with the press!&lt;/p&gt;
+
+&lt;p&gt;And the same applies to your computer analysis. If you’re removing columns with NAs &amp;quot;by hand&amp;quot; it will probably take you less time than writing a function. But what if you have more tables? How can you be sure you didn’t miss any? And on the plus side, if you write function-based scripts, chances are that you already have a function that does remove the columns with NAs from a former analysis.&lt;/p&gt;
+
+&lt;p&gt;To follow up with &lt;a href=&quot;http://www.ecoevoblog.com/2014/10/06/phd-pretty-huge-disaster/&quot;&gt;my previous post&lt;/a&gt;, applied, to me, this happened to be a salvation! Because I spent 6 months trying to apply bioinformatics good practice, it only took me one day to relaunch the whole analysis! I just had to change the name of the version of the software that was bugged and press enter...&lt;/p&gt;
+
+&lt;p&gt;The process of doing actual science (i.e. from coming up with an interesting idea to submitting the paper) is not a continuous and straight process and it can drastically change at every step and is more about trial and error than about succeeding straight off.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Photo credit&lt;/strong&gt;: wikimedia commons&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://www.ecoevoblog.com/2014/10/13/phd-positive-happy-developments/&quot;&gt;Original post&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 13 Oct 2014 00:00:00 +0100</pubDate>
+        <link>http://TGuillermeBlog.github.io/Positive-Happy-Developments/</link>
+        <guid isPermaLink="true">http://TGuillermeBlog.github.io/Positive-Happy-Developments/</guid>
+      </item>
+    
+      <item>
+        <title>PhD – Pretty Huge Disaster</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/images/Dresden-300x300.jpg&quot; alt=&quot;headimg&quot;&gt;
+This is a mini series of two posts about finding positive things in negative results. Science is often a trial and error process and, depending on what you’re working with, errors can be fatal. As people don’t usually share their bad experiences or negative results beyond the circle of close colleagues and friends, I thought (and hope!) that sharing my point of view, as a PhD student might be useful.&lt;/p&gt;
+
+&lt;p&gt;If you’re about to do a PhD &lt;strong&gt;you will fail&lt;/strong&gt; and if you’ve already successfully finished one, &lt;strong&gt;you have failed&lt;/strong&gt;. At least a little bit… come on… are you sure? Not even a teeny tiny bit? By failure, I just mean scientific failure here, as if you ran an experiment and the result was… a fail, no results, do it again. There are millions of ways to fail, from errors in the experimental design to clumsiness but in this series of posts, I want to emphasize the consequences of failure more than its causes. I think that it is an important thing to learn and to embrace as a young future scientist, as much as journal rejection and other annoying and common silent academic failures.&lt;/p&gt;
+
+&lt;p&gt;During the two first years of my PhD, I went from the idea of quickly testing some assumptions as a starting point for a bigger question to some detailed and time consuming simulations on a detailed part of these assumptions. The time spent appeared to be completely useless scientifically because the analysis failed leading to false negative results and kept me away from going back to the bigger question. Or did it?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;When wrong is right part 1&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Since the summer of last year, I was working on an intensive computational project. I was running a kind of sensitivity analysis to see the effect of missing data on the phylogenies that have both living and fossil species (that’s called Total Evidence to link back to former posts, &lt;a href=&quot;http://www.ecoevoblog.com/2014/01/13/a-brave-new-world-of-monkeying-around-with-trees/&quot;&gt;here&lt;/a&gt; and &lt;a href=&quot;http://www.ecoevoblog.com/2013/03/29/dinosaurs-are-useless-if-they-dont-go-in-trees/&quot;&gt;here&lt;/a&gt;). In brief I was simulating datasets with a known (right) result by removing data from it to see how the results were affected. Because of my wide ignorance at the start in coding, simulations and the method I was testing, the project took way longer than planned. And all that was of course ignoring &lt;a href=&quot;http://en.wikipedia.org/wiki/Hofstadter%27s_law&quot;&gt;Hofstadter’s law&lt;/a&gt; (‘it always takes longer than you think, even when you take into account Hofstadter’s Law’).&lt;/p&gt;
+
+&lt;p&gt;The expected result, as for any sensitivity-like analysis, was that as you reduce the amount of data, the harder it would be to get the right results. That wasn’t what I found at all. Instead, my simulations seemed to be suggesting that whatever the amount of data, you never get the right results. Suspicious, I tried to check my simulations and asked advice from competent and talented people that helped me finding caveats in my project. But still, after checking and testing everything over and over again, the simulation results appeared to be the same: the amount of data doesn’t matter, the method just don’t work.&lt;/p&gt;
+
+&lt;p&gt;Even though these results were negative, they were intriguing and, if they were right, probably important because of the number of people willing to try the Total Evidence method over the last three years. From that perspective, I presented &lt;a href=&quot;https://www.youtube.com/watch?v=Bfr24VdYT8E&quot;&gt;my results&lt;/a&gt; at the Evolution 2014 conference in Raleigh. There, I got even more comments from even more people but still, the results appeared to be right. Until one person that had a similar unexpected result suggested that should try an older version of some of the software I was using.&lt;/p&gt;
+
+&lt;p&gt;It appeared that person was right and all the weirdness in the results that I tried for months to fix, check and explain were caused by a bug in the latest update (don’t use MrBayes 3.2.2 for Total Evidence analysis, prefer the version 3.2.1).&lt;/p&gt;
+
+&lt;p&gt;After an obvious moment of relief, came an obvious negative feeling of having lost my time and how I should have given up instead of continuing to dig. But a posteriori, I’m actually glad of this misadventure and learned two really important lessons: (1) published software is not 100% reliable; always test their behaviour; (2) there is nothing more productive than sending your work to colleagues and experts for pre-reviewing. Even though, the bug appeared to be “trivial and easy to fix”, the amount of comments I had definitely helped improve both my understanding and my standards for this project.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Photo credit&lt;/strong&gt;: wikimedia commons&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://www.ecoevoblog.com/2014/10/06/phd-pretty-huge-disaster/&quot;&gt;Original post&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 06 Oct 2014 00:00:00 +0100</pubDate>
+        <link>http://TGuillermeBlog.github.io/Pretty-Huge-Disaster/</link>
+        <guid isPermaLink="true">http://TGuillermeBlog.github.io/Pretty-Huge-Disaster/</guid>
+      </item>
+    
+      <item>
+        <title>Dig for victory</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/images/Satellite-496x260.jpg&quot; alt=&quot;headimg&quot;&gt;
+In a &lt;a href=&quot;http://www.ecoevoblog.com/2014/06/09/what-isnt-palaeontology-like/&quot;&gt;previous post&lt;/a&gt; I showed what I think being a palaeontologist is all about, especially the point that palaeontologists are different from oryctologists. The first ones study changes of biodiversity through time, the second ones extract fossils (but again, both are far from exclusive).&lt;/p&gt;
+
+&lt;p&gt;Here is a short summary of experience working at Upper Cretaceous excavation sites in the South of France (that’s around 80-65 million years old) namely in the Bellevue excavation site in Esperaza run by the &lt;a href=&quot;http://www.dinosauria.org/&quot;&gt;Musée des Dinosaures&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;First step is to find a place to dig.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/DSC04899-e1400677813302-300x270.jpg&quot; alt=&quot;bodyimg&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;Step 1.1: find something&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;Why along the road? It doesn’t have to be but it has two clear advantages: you can park your car next to it and it’s usually rich in fresh outcrops of rock (where you can find more fossils than in a crop field!).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/IMG_0795-300x200.jpg&quot; alt=&quot;bodyimg&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;Step 1.2: try again and again!&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;The second step, once you’ve decided that there might be something in the outcrop you’ve just explored, is to remove all the “annoying stuff”. To palaeontologists that obviously means all the wonderful fauna and flora and their associated environment (usually soil) that are growing above the potential fossiliferous site (how rude of them!).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/Montreudon2011-300x201.jpg&quot; alt=&quot;bodyimg&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;Step 2: remove all the annoying stuff&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;Once you’ve removed the layer of living stuff, you can start the long and interesting part: hitting rocks with a hammer and a pike during the hottest days of summer.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/DSCN0053-300x225.jpg&quot; alt=&quot;bodyimg&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;Step 3: start hitting the rocks&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/Espe1-300x228.jpg&quot; alt=&quot;bodyimg&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;Step 4: find something (hopefully!)&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally, with a bit (a huge bit) of luck, you’ll find a fossil that was worth all this hassle.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/Espe2-300x178.jpg&quot; alt=&quot;bodyimg&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;Step 5.1: clean the fossil&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;Once you’ve found the fossil, the first step is to clean the surface facing you and start to build a trench around it in order to pour plaster over it and bring it to the lab. As you can see, paint brushes are useless here too: the hammer and the pike make ideal tools for the surrounding trench and an oyster knife and a smaller hammer do the cleaning jobs. Oh yeah, and a tube of glue. After around 80 million years, the bones get a bit fragile.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/DSCN0478-300x225.jpg&quot; alt=&quot;bodyimg&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;Step 5.2: clean the fossil… again!&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;The last step is to properly clean the fossil in the lab by removing it from all the surrounding rock. The best tools are mini pneumatic-drills and loads of patience. When all that is done, the palaeontologist can start to work on the fossil.&lt;/p&gt;
+
+&lt;p&gt;You can find more impressive pictures on the &lt;a href=&quot;http://www.dinosauria.org/les-fouilles.php&quot;&gt;Musée des Dinosaures webpage&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Photo credit&lt;/strong&gt;: Thomas Guillerme and Sébastien Enault (with the kind authorisation of Jean Le Loeuff). Feature image: http://www.libraryofbirmingham.com/&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://www.ecoevoblog.com/2014/06/23/dig-for-victory/&quot;&gt;Original post&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 23 Jun 2014 00:00:00 +0100</pubDate>
+        <link>http://TGuillermeBlog.github.io/Dig-fo-victory/</link>
+        <guid isPermaLink="true">http://TGuillermeBlog.github.io/Dig-fo-victory/</guid>
+      </item>
+    
+      <item>
         <title>What is(n’t) palaeontology like?</title>
         <description>&lt;p&gt;&lt;img src=&quot;/images/paleontology-300x227.jpg&quot; alt=&quot;headimg&quot;&gt;
 After rereading &lt;a href=&quot;http://www.ecoevoblog.com/2014/03/14/whats-it-like-to-study-zoology/&quot;&gt;Sive’s excellent blog&lt;/a&gt; post on what is a zoologist or at least what is it like to study it, I remember having a slightly similar difficulty in explaining my background in palaeontology. &lt;/p&gt;
@@ -21,7 +311,7 @@ After rereading &lt;a href=&quot;http://www.ecoevoblog.com/2014/03/14/whats-it-l
 
 &lt;p&gt;Palaeontologists do not excavate fossils, that’s a job for Oryctologists. Okay, I’m being picky with the terms here but, again, the distinction is important. Most palaeontologists are also oryctologists, meaning that they go into the field and do excavations as the basis for their scientific work (yeah, in the end, that’s not a cliché, one of the nicest parts of the job is field work!). However, not all palaeontologists are oryctologists (even though most are) and many oryctologists are not palaeontologists. Again, palaeontology is not only about digging up fossils and putting them in museums (contrary to what &lt;a href=&quot;https://www.youtube.com/watch?v=B7zo2zY1Zqg&quot;&gt;this song&lt;/a&gt; suggests), it is about the study of changes that occurred on our planet through deep time (geography, climate, etc...) and how they affected living organisms (evolution, extinction, etc...).&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/JP-Digsite-300x164.jpg&quot; alt=&quot;_config.yml&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/JP-Digsite-300x164.jpg&quot; alt=&quot;bodyimg&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;While we’re on the subject of oryctology, there is a huge public misconception about excavations. Most people that have seen Jurassic Park might think that, in the 90’s, one could just go into the field armed with nothing but a paint brush and happily stumble across a complete &lt;em&gt;Velociraptor&lt;/em&gt; (&lt;em&gt;Deinonychus&lt;/em&gt;!) skeleton which just had to be cleaned out from the surrounding layers of dust. This scenario would certainly make palaeontology way more straightforward and easy but it would also mean that excavations would be just boring routines where a hoover would do a better job than a naively enthusiastic undergrad student!&lt;/p&gt;
 
@@ -46,323 +336,6 @@ After rereading &lt;a href=&quot;http://www.ecoevoblog.com/2014/03/14/whats-it-l
         <pubDate>Mon, 09 Jun 2014 00:00:00 +0100</pubDate>
         <link>http://TGuillermeBlog.github.io/What-isnt-palaeontology/</link>
         <guid isPermaLink="true">http://TGuillermeBlog.github.io/What-isnt-palaeontology/</guid>
-      </item>
-    
-      <item>
-        <title>The Easter bunny’s origins are linked with climate change</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/images/Easterbunny_2-300x300.jpg&quot; alt=&quot;headimg&quot;&gt;
-The Easter Bunny apparently originated in German Lutherans’ traditions before 1682 when it was first mentioned in &lt;a href=&quot;http://en.wikipedia.org/wiki/Georg_Franck_von_Franckenau&quot;&gt;von Franckenau’s&lt;/a&gt; &lt;em&gt;De ovis paschalibus&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;In France and Belgium however, it’s not a rabbit that hides eggs in the garden for Easter morning but flying bells coming back from Rome (they went there for their holidays since the &lt;a href=&quot;http://en.wikipedia.org/wiki/Maundy_Thursday&quot;&gt;Maundy Thursday&lt;/a&gt;). For many people this makes no sense at all (flying bells, come on!) but on the other hand I think that a bunny carrying coloured eggs and hiding them does not make much more sense...&lt;/p&gt;
-
-&lt;p&gt;However, the Easter bunny makes a bit more sense than the bells after re-reading &lt;a href=&quot;http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0059668&quot;&gt;Ge et al.’s&lt;/a&gt; excellent paper, on the evolution of &lt;a href=&quot;http://en.wikipedia.org/wiki/Rabbits&quot;&gt;rabbits&lt;/a&gt;, &lt;a href=&quot;http://en.wikipedia.org/wiki/Hares&quot;&gt;hares&lt;/a&gt; and &lt;a href=&quot;http://en.wikipedia.org/wiki/Pikas&quot;&gt;pikas&lt;/a&gt; (careful: cuteness overload!).&lt;/p&gt;
-
-&lt;p&gt;Lagomorphs originated in the early Eocene in Asia (that’s around 55-50 Mya – million years ago), they then split during the mid-late Eocene (~40 Mya) into the two families we know today, the Orchotonidae (the pikas and 31 other genera) and the Leporidae (hares and rabbits, 45 genera). As you might have noticed from my former posts, I’m &lt;a href=&quot;http://www.ecoevoblog.com/2013/03/29/dinosaurs-are-useless-if-they-dont-go-in-trees/&quot;&gt;vaguely&lt;/a&gt; (&lt;a href=&quot;http://www.ecoevoblog.com/2013/02/18/palaeo-poetry-and-placental-mammals/&quot;&gt;vaguely&lt;/a&gt;, &lt;a href=&quot;http://www.ecoevoblog.com/2013/10/18/the-placental-mammal-saga-special-summer-double-episode/&quot;&gt;vaguely&lt;/a&gt;, &lt;a href=&quot;http://www.ecoevoblog.com/2014/01/13/a-brave-new-world-of-monkeying-around-with-trees/&quot;&gt;vaguely&lt;/a&gt;) interested in integrating fossils and living species within phylogenies, well Ge et al’s paper is a really good example of why one should not ignore past diversity. If you only look at living Orchotonids, you would miss the 31 other genera (97% of the family’s generic diversity!). Furthermore, if you only look at the body mass variation in living species of Leporids you would miss the rabbit &lt;em&gt;T.rex&lt;/em&gt;:  &lt;a href=&quot;http://en.wikipedia.org/wiki/Nuralagus_rex&quot;&gt;&lt;em&gt;Nuralagus&lt;/em&gt;&lt;/a&gt; &lt;em&gt;rex&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;So now let us go back to our question and see when did the Easter bunny really originate and what are the origins of its family’s diversity. During the late Eocene/early Oligocene (~35-31 Mya), the climate was warmer, wetter and had higher CO2 levels than nowadays. This climate corresponded with a landscape dominated by forest and an increased distribution of C3 &amp;quot;grasses&amp;quot; notably &lt;a href=&quot;http://en.wikipedia.org/wiki/Asteraceae&quot;&gt;Asteraceae&lt;/a&gt;, &lt;a href=&quot;http://en.wikipedia.org/wiki/Rosaceae&quot;&gt;Rosaceae&lt;/a&gt; and &lt;a href=&quot;http://en.wikipedia.org/wiki/Fabaceae&quot;&gt;Fabaceae&lt;/a&gt; which happens to be the principal diet of Orchotonids leading to an increased diversification in this group. However, Leporids, which appeared roughly during the same period, remained less diversified than their cute cousins.&lt;/p&gt;
-
-&lt;p&gt;The climate became gradually colder and drier during the Oligocene and Miocene period to reach a global cold and dry climate during the late Miocene (~5-10 Mya) slightly after &amp;quot;&lt;a href=&quot;http://www.ncbi.nlm.nih.gov/pubmed/16553316&quot;&gt;Nature’s Green Revolution&lt;/a&gt;&amp;quot; leading to the expansion of &lt;a href=&quot;http://en.wikipedia.org/wiki/C4_carbon_fixation&quot;&gt;C4&lt;/a&gt; &amp;quot;grasses&amp;quot; namely the &lt;a href=&quot;http://en.wikipedia.org/wiki/Poaceae&quot;&gt;poaceae&lt;/a&gt; (the true grasses). During this period, the number of Ochotonid genera &amp;quot;dramatically decreased&amp;quot; (to quote the authors) however Leporids expanded in both geographic range and generic diversity.&lt;/p&gt;
-
-&lt;p&gt;According to the authors, it was this &amp;quot;Nature’s Green Revolution&amp;quot; and the rise of the C4 plants that drove the shift in dominance between the two families of Lagomorphs, allowing the Leporids, that could digest C4 plants successfully and therefore benefit more from the increasingly open landscapes to radiate during the Pliocene (~5 Mya).  Hopping may look ridiculous but it is actually a &lt;a href=&quot;http://stripe.colorado.edu/%7Ekram/kangaroo.pdf&quot;&gt;really efficient&lt;/a&gt; way to move around in open grasslands. This pattern of adaptation to global cooling and the rise of C4 plants is also found in the evolution of the &lt;a href=&quot;http://en.wikipedia.org/wiki/Bovidae&quot;&gt;Bovidae&lt;/a&gt; and &lt;a href=&quot;http://en.wikipedia.org/wiki/Equidae&quot;&gt;Equidae&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;So Ge et al.’s study gives us an explanation for why it is an Easter bunny that hides the eggs in C4 grass and not an Easter pika (hiding it in C3 grass). However, it is important to stress that these findings don’t in any way detract from flying bells or &lt;a href=&quot;https://www.youtube.com/watch?v=jcjRAbj0ycE&quot;&gt;why we colour eggs&lt;/a&gt;...&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Photo credit&lt;/strong&gt;: wikimedia commons&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://www.ecoevoblog.com/2014/04/18/the-easter-bunnys-origins-are-linked-with-climate-change-2/&quot;&gt;Original post&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-</description>
-        <pubDate>Fri, 18 Apr 2014 00:00:00 +0100</pubDate>
-        <link>http://TGuillermeBlog.github.io/The-Easter-Bunny/</link>
-        <guid isPermaLink="true">http://TGuillermeBlog.github.io/The-Easter-Bunny/</guid>
-      </item>
-    
-      <item>
-        <title>Hopsolete Trees</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/images/Beer_bottles-300x205.jpg&quot; alt=&quot;headimg&quot;&gt;
-One of the most unusual benefits of being in Ireland from a Southern French PhD student’s perspective is not so much the rain and the pronounced taste for culinary oddities (&lt;a href=&quot;http://j8.ly/popular-irish-chinese-dish-3-in-1-fried-rice&quot;&gt;some weird&lt;/a&gt;, &lt;a href=&quot;http://en.wikipedia.org/wiki/Breakfast_roll&quot;&gt;some excellent&lt;/a&gt;) but the awesome trend towards a new age of craft beers (and I’m not mentioning the pillar of &lt;a href=&quot;http://en.wikipedia.org/wiki/Guinness&quot;&gt;Irish pub culture&lt;/a&gt;).&lt;/p&gt;
-
-&lt;p&gt;Looking at the increasing beer richness available in any decent pub/off-licence, I was inspired to combine two of my passions: beer-related stuff and phylogeny-related stuff. Despite an honourable attempt by &lt;a href=&quot;http://www.jasonleebrown.org/jasonleebrown.org/beerlogeny.html&quot;&gt;J.L. Brown&lt;/a&gt;, I would like to discuss the three reasons why it’s imphopsible to build a true beer phylogeny. Admittedly one of the main reasons for this impossibility is the side effect of drinking any sugar rich (at least originally) drink that has been infected by &lt;a href=&quot;http://en.wikipedia.org/wiki/Saccharomyces_cerevisiae&quot;&gt;&lt;em&gt;Saccharomyces cerevisiae&lt;/em&gt;&lt;/a&gt;... But there are also three more theoretical reasons.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;To build phylogenies, you need data.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Despite the fact that the data collection part of such a study could be great (doing your fieldwork in a pub, isn’t that cool?), I doubt the data base would actually be big enough to infer any well supported phylogenetic trees. Think about a matrix with only one character (let’s say presence or absence of bones) and with 4 species (a fly, a tuna, a pigeon and a walrus); you won’t be able to resolve the tree past the first node. Theoretically one needs at least a number of characters equal to the number of taxa (- 2 because you can cheat by ignoring the first and the last node).&lt;/p&gt;
-
-&lt;p&gt;Let’s see what our data matrix looks like for beers: there are approximately &lt;a href=&quot;http://en.wikipedia.org/wiki/Beer_style&quot;&gt;180 different beer styles&lt;/a&gt; out there so we need at least 178 characters to classify them. Even if some characters come readily to your mind (ABV – alcool! –, colour, ingredients, taste), I’ll bet you cannot find more than 10 of them.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;To build phylogenies, you need models.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;When building a phylogeny, it is important to remember that the true questions we are asking our software are something like: (1) which tree involves the minimum number of changes or (2) which is the most likely tree regarding my data?&lt;/p&gt;
-
-&lt;p&gt;The first question is the cladistics approach; using an optimal criterion parameter (usually parsimony) when you’re building your tree. It states that the best tree will be the one implying the least number of changes for grouping the tips together. The second question is the probabilistic approach, which is based on fitting a model of character evolution that will be the best fit for the data.&lt;/p&gt;
-
-&lt;p&gt;Going back to our brews, the question we want to ask the software will mainly depend on the assumptions we have. A cladistic approach such as the one that &lt;a href=&quot;http://www.jasonleebrown.org/jasonleebrown.org/beerlogeny.html&quot;&gt;Brown&lt;/a&gt; used works as long as we have sampled enough characters back in the pub. However, unless each clade of beers has a clear pattern (e.g. only the stouts have an ABV between 4.5° and 5°) we are likely to suffer from the well-known &lt;a href=&quot;http://en.wikipedia.org/wiki/Long_branch_attraction&quot;&gt;Long Branch Attraction&lt;/a&gt; artifact in some parts of the tree.&lt;/p&gt;
-
-&lt;p&gt;So can we use the probabilistic method instead? Again, as long as we have enough data, this method is possible but will it give an accurate result? Well, that depends on your model of character evolution. Since we cannot use the classic &lt;a href=&quot;http://en.wikipedia.org/wiki/Models_of_DNA_evolution&quot;&gt;DNA evolution models&lt;/a&gt;, we will have to build our own evolutionary model implying that we have a reasonably guessable probability of going from one state to another for any character (e.g. the probability of moving along the &lt;a href=&quot;http://en.wikipedia.org/wiki/Standard_Reference_Method&quot;&gt;Standard Reference Method&lt;/a&gt; color scale).&lt;/p&gt;
-
-&lt;p&gt;By the way, Spencer and Wilberg (&lt;a href=&quot;http://onlinelibrary.wiley.com/doi/10.1111/cla.12018/full&quot;&gt;Cladistics – 2013&lt;/a&gt;) tested the actual evolutionary meaning of the two methods (although, they were fairly biased in favour of one of the two approaches).&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;To build phylogenies, you need... evolution.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;A last point to this whole problem is that trying to reconstruct a realistic scenario of a clade’s evolution (i.e. a phylogeny) implies that the mechanism underlying the whole process is mainly descent with modification (but this is not exclusively necessary e.g. &lt;a href=&quot;http://en.wikipedia.org/wiki/Evolutionary_linguistics&quot;&gt;evolutionary linguistics&lt;/a&gt; or &lt;a href=&quot;http://en.wikipedia.org/wiki/Horizontal_gene_transfer&quot;&gt;horizontal transfer&lt;/a&gt; – see my &lt;a href=&quot;http://www.ecoevoblog.com/2013/01/11/hey-tree-of-life-hows-it-growing/&quot;&gt;previous blog post&lt;/a&gt; or some more serious (awesome) views &lt;a href=&quot;http://www.pnas.org/content/96/7/3801&quot;&gt;here&lt;/a&gt;, &lt;a href=&quot;http://www.nature.com/nature/journal/v431/n7005/full/nature02848.html&quot;&gt;here&lt;/a&gt; or &lt;a href=&quot;http://mbe.oxfordjournals.org/content/29/6/1545&quot;&gt;here&lt;/a&gt;).&lt;/p&gt;
-
-&lt;p&gt;Regarding these three points, I must reluctantly abandon the idea of doing any proper beer phylogeny since it seems that a beer-types classification would look more like a massive network than a straightforward textbook example of a phylogenetic tree... To end with a more positive and less phylo-nerd point, these messy relationships between each type of beer allow us to enjoy creative, new craft beers such as &lt;a href=&quot;http://en.wikipedia.org/wiki/Galway_Hooker_%28beer%29&quot;&gt;Irish Pale Ales&lt;/a&gt; or &lt;a href=&quot;http://en.wikipedia.org/wiki/Porterhouse_Brewery&quot;&gt;Oyster Stouts&lt;/a&gt; which are more than the sum of every element composing their name.&lt;/p&gt;
-
-&lt;p&gt;And for those that just don’t care, I’ll leave you with this excellent &lt;a href=&quot;http://aleheads.com/2010/11/30/in-defense-of-beer-styles/&quot;&gt;post by Barley McHops&lt;/a&gt; from the &lt;a href=&quot;http://aleheads.com/2010/11/30/in-defense-of-beer-styles/&quot;&gt;aleheads&lt;/a&gt; blog while I’m going to continue my sampling... Just in case...&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Photo credit&lt;/strong&gt;: wikimedia commons&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://www.ecoevoblog.com/2014/04/11/hopsolete-trees/&quot;&gt;Original post&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-</description>
-        <pubDate>Fri, 11 Apr 2014 00:00:00 +0100</pubDate>
-        <link>http://TGuillermeBlog.github.io/Hopsolete-trees/</link>
-        <guid isPermaLink="true">http://TGuillermeBlog.github.io/Hopsolete-trees/</guid>
-      </item>
-    
-      <item>
-        <title>Gould Mine</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/images/Gould-239x300.png&quot; alt=&quot;headimg&quot;&gt;
-The career of Stephen Jay Gould eludes easy definition because of his prolific output in so many areas. &lt;a href=&quot;http://en.wikipedia.org/wiki/Michael_Shermer&quot;&gt;Michael Shermer&lt;/a&gt; characterises him as a historian of science and scientific historian, popular scientist and scientific populariser.&lt;/p&gt;
-
-&lt;p&gt;The popular science writings of Stephen Jay Gould (20 of his 22 books and hundreds of articles) are responsible for making me want to study macroevolution. He said of his popular essays that they were intended &amp;quot;for professionals and lay readers alike&amp;quot;. We have already covered some aspects of science communication, like &lt;a href=&quot;http://www.ecoevoblog.com/2014/02/10/the-heat-and-light-of-science-communication/&quot;&gt;how to do&lt;/a&gt; it and &lt;a href=&quot;http://www.ecoevoblog.com/2014/02/16/3d-dinosaurs-are-bringing-down-the-ivory-tower/&quot;&gt;which kind of scientists&lt;/a&gt; should engage in it. Gould wrote 479 academic papers during his career, so any thought of public outreach damaging one’s science certainly didn’t apply to him.&lt;/p&gt;
-
-&lt;p&gt;Let’s have a closer look at his academic legacy. Gould is well known for his theory of &lt;a href=&quot;http://en.wikipedia.org/wiki/Punctuated_equilibrium&quot;&gt;punctuated equilibrium&lt;/a&gt; co-written with &lt;a href=&quot;http://www.nileseldredge.com/&quot;&gt;Niles Eldredge&lt;/a&gt;. This fuelled the debate around ideas such as species selection and the mechanisms explaining macroevolutionary patterns.&lt;/p&gt;
-
-&lt;p&gt;Despite this being the work for which he is best remembered it represents a tiny fraction of his output. He actually published only 15 papers with this theory as a main topic, which represents only 3% of his academic work! As a comparison, he published more papers (17) on baseball!&lt;/p&gt;
-
-&lt;p&gt;His primary field was invertebrate palaeontology (he was the curator of Harvard’s Invertebrate palaeontology collections from 1973 to his death in 2002) but again, even his main focus in this area (on Cerion snails) represents only on one quarter of his work. Shermer describes him as being &amp;quot;no single-minded fossil digger or armchair theorizer.&amp;quot;&lt;/p&gt;
-
-&lt;p&gt;Actually, nearly one fifth of his massive scientific output is primarily focused on the history of science. Again, as Shermer says, he was a &amp;quot;Historian of Science and Scientific historian&amp;quot;.&lt;/p&gt;
-
-&lt;p&gt;So Gould should not be only remembered for his proposal of punctuated equilibrium. Gould published 169 papers in 23 last years of last century, which gives him an average number of publications in the history of science of 7.34 per year. To put it in the historical context of the field, the only names that have been more productive are Aristotle, Kant, Goethe and Newton.&lt;/p&gt;
-
-&lt;p&gt;It’s rare to see a scientist who divided opinion so much, hagiographies have been written about him but he’s also loathed. Look at these for contrasting views:&lt;/p&gt;
-
-&lt;p&gt;&amp;quot;In the field of evolutionary biology at large, Gould’s reputation is mud.&amp;quot;&lt;/p&gt;
-
-&lt;p&gt;&amp;quot;Steve is extremely bright, inventive. He thoroughly understands paleontology; he thoroughly understands evolutionary biology.&amp;quot;&lt;/p&gt;
-
-&lt;p&gt;I’ll leave it to the reader to find out where they stand on Gould for there is a lot of controversy to consume. I prefer to remember him through his essays on Natural History than through his few papers about punctuated equilibrium, better illustrating the &amp;quot;measure of a man&amp;quot; (that’s Shermer’s pun). His life illustrates how interdisciplinary studies exponentially increase scientific productivity: &amp;quot;Gould has used the history of science to reinforce his evolutionary theory (and vice versa)&amp;quot; writes Shermer. And that applies as much to punctuated equilibrium as to baseball!&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Photo credit&lt;/strong&gt;: wikimedia commons&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://www.ecoevoblog.com/2014/02/28/gould-mine/&quot;&gt;Original post&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-</description>
-        <pubDate>Fri, 28 Feb 2014 00:00:00 +0000</pubDate>
-        <link>http://TGuillermeBlog.github.io/Gould-mine/</link>
-        <guid isPermaLink="true">http://TGuillermeBlog.github.io/Gould-mine/</guid>
-      </item>
-    
-      <item>
-        <title>3D dinosaurs are bringing down the Ivory Tower</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/images/Pasta-Brontosaurus-300x196.jpg&quot; alt=&quot;headimg&quot;&gt;
-Adam raised the point of science communication in his &lt;a href=&quot;http://www.ecoevoblog.com/2014/02/10/the-heat-and-light-of-science-communication/&quot;&gt;last blog post&lt;/a&gt; of &lt;strong&gt;how&lt;/strong&gt; science should be communicated to a mainly interested and receptive public. The main question when thinking about science communication is &amp;quot;how should we do it?&amp;quot; However a second question, arising from this one would be &amp;quot;&lt;strong&gt;who&lt;/strong&gt; should do it?&amp;quot;&lt;/p&gt;
-
-&lt;p&gt;I believe having an interest in popular science is the first step for starting a career as a scientist. Personally, I was influenced by &lt;a href=&quot;http://en.wikipedia.org/wiki/Jurassic_Park_%28film%29&quot;&gt;Jurassic Park&lt;/a&gt;, which gave me the idea that in a distant future I would (could) become a paleontologist. I believe this influence is shared by a vast majority of young paleontologists of this &lt;a href=&quot;http://en.wikipedia.org/wiki/The_Dinosaur_Heresies&quot;&gt;Bakker dinosaur’s revolution&lt;/a&gt; generation. So, to me, even if Jurassic Park bent some scientific rules (the most obvious one being bringing stones to life), the film created a renewed interest in its related field of palaeontology.&lt;/p&gt;
-
-&lt;p&gt;Ok, so that’s a good reason for popularizing science then? It’s not that easy. A fairly large amount of scientists will always look at such attempts to popularize science as a &amp;quot;bastard&amp;quot; child of the scientific adventure, a kind of side effect that makes scientists, in the best case, smile ironically. In the worst case though, they think it propagates massively erroneous ideas: like the one I pointed out above or -another that &amp;quot;makes me smile ironically&amp;quot; – that paleontologists are Indiana Jones-style adventurers that wander around the world and from time to time brush the sand and discover how velociraptors (read Deinonychus) were talking to each other.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Richard_Whiteley&quot;&gt;Richard Whitley&lt;/a&gt; in his book, &lt;a href=&quot;http://link.springer.com/book/10.1007/978-94-009-5239-3&quot;&gt;&lt;em&gt;Expository Science: Forms and Functions of Popularisation&lt;/em&gt;&lt;/a&gt;, summarises the idea by writing that: &amp;quot;popularization is not viewed as part of the knowledge production and validation process but as something external to top research which can be left to non-scientists, failed scientists or ex-scientists as part of the general public relations effort of the research enterprise.&amp;quot;&lt;/p&gt;
-
-&lt;p&gt;This vision of popularizing science is linked to the idea that an increased output of popular science leads to a fatal decrease of legitimate and accurate scientific progress. This is known as the ‘Sagan Effect’ after &lt;a href=&quot;http://en.wikipedia.org/wiki/Carl_Sagan&quot;&gt;Carl Sagan&lt;/a&gt; and the erroneous claim that his legitimate scientific output decreased after the initiation of his popular science TV series: &lt;a href=&quot;http://en.wikipedia.org/wiki/Cosmos:_A_Personal_Voyage&quot;&gt;&lt;em&gt;Cosmos&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Can one popularize science and actively do science?&lt;/p&gt;
-
-&lt;p&gt;When one has a look at the actual numbers (scientific articles published vs. popular articles published), one expects that if popularizing science is reserved for &amp;quot;failed scientists&amp;quot;, people publishing more popular articles will publish fewer science articles. &lt;a href=&quot;http://www.ecoevoblog.com/2014/02/16/3d-dinosaurs-are-bringing-down-the-ivory-tower/en.wikipedia.org/wiki/Michael_Shermer&quot;&gt;Michael Shermer&lt;/a&gt;, in his paper published in &lt;a href=&quot;http://sss.sagepub.com/content/32/4/489&quot;&gt;Social Studies of Science in 2002&lt;/a&gt;, brings down this popular belief by calculating the actual numbers of scientific papers published by these popular science writers.&lt;/p&gt;
-
-&lt;p&gt;Let’s take a look at the numbers.&lt;/p&gt;
-
-&lt;p&gt;As a base line, while the four PIs publishing on this blog all take part in extra curricular activities, they are primarily research scientists. Last year, they published all together 22 papers which gives a respectable average of nearly one paper per PI published every two months! In contrast, if you look at the great popular science writers of the end of the last century (say Carl Sagan or Steven Jay Gould), during their massive and influential popularization of their fields, they produced an average of one paper per month for Sagan and nearly two papers a month for Gould (and that for 35 consecutive years!). So they seem to have it all: &amp;quot;legitimate&amp;quot; science output and successful careers as science communicators. Just looking at these figures, the myth of the trade-off between popular science writing and actual scientific production is just, as Shermer describes it, &amp;quot;a Chimera&amp;quot;!&lt;/p&gt;
-
-&lt;p&gt;Can one popularize science and actively do science?&lt;/p&gt;
-
-&lt;p&gt;Yes. And to go back to my first point, with Jurassic Park (which, in comparison to Gould or Sagans’ popular work can easily be classified as a &amp;quot;bad&amp;quot; way to do it), I believe that popularizing science is not a problem: in an altruistic world, scientists should focus on contributing to the advancement of their field by any means possible, not exclusively on their own amount of publications. Thankfully, most scientists manage to combine both popular communication and research output efficiently. I think that one important and still altruistic way to contribute to the advancement of a field is definitely science popularization. Richard Whitley says that &amp;quot;by successfully combining claims to universal validity and social utility through popularization, [Sagan and Gould] laid the foundation for the present domination and expansion of the sciences.&amp;quot; These contributions have a real long-term benefit to the advancement of the field. Firstly, the ideas of the authors of popular science become fixed in the public consciousness and secondly (most importantly to me), they inspire new generations of scientists that will, later on, personally contribute to the advancement of their field.&lt;/p&gt;
-
-&lt;p&gt;Is this bad for &amp;quot;legitimate&amp;quot; scientific production? Not at all! By popularizing evolution in a realistic (or perhaps not so realistic) way, Gould and Jurassic Park spark the interest and imaginations of the next generation of potential scientist who, through their research, will make direct contributions to scientific research!&lt;/p&gt;
-
-&lt;p&gt;It’s a positive feedback cycle: excellent scientists generate good science communicators; good scientific communication generates scientific interest and curiosity; scientific interest produces scientists and some of these scientists will go on to become good scientific communicators…&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Photo credit&lt;/strong&gt;: wikimedia commons&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://www.ecoevoblog.com/2014/02/16/3d-dinosaurs-are-bringing-down-the-ivory-tower/&quot;&gt;Original post&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sun, 16 Feb 2014 00:00:00 +0000</pubDate>
-        <link>http://TGuillermeBlog.github.io/3D-dinosaurs/</link>
-        <guid isPermaLink="true">http://TGuillermeBlog.github.io/3D-dinosaurs/</guid>
-      </item>
-    
-      <item>
-        <title>Levels of Selection</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/images/Okasha-2006.jpg&quot; alt=&quot;headimg&quot;&gt;
-Thanks to the magical (and sometimes frustrating!) technological capabilities of Google+, every fortnight we have international phylo/macro journal club meetings which span three continents and even include elements of time travel (the Australian participants are always in the future!).&lt;/p&gt;
-
-&lt;p&gt;Among the varied &lt;a href=&quot;https://www.youtube.com/user/BetterOnTheMoon&quot;&gt;topics we cover&lt;/a&gt;, one of our recent sessions was a discussion of Samir Okasha’s book, &lt;a href=&quot;http://www.amazon.com/Evolution-Levels-Selection-Samir-Okasha/dp/B005FOHQMG&quot;&gt;&lt;em&gt;Evolution and Levels of Selection&lt;/em&gt;&lt;/a&gt;. Evolutionary biology is an empirical science which also receives attention from philosophers. The two approaches are often difficult to reconcile so Okasha’s book is a welcome bridge for the gap between philosophical theory and practical biology. We mainly focused on the chapter which deals with species selection, clade selection and macroevolution and addresses the &lt;a href=&quot;http://en.wikipedia.org/wiki/Unit_of_selection&quot;&gt;units of selection&lt;/a&gt; debate.&lt;/p&gt;
-
-&lt;p&gt;As a brief background, the debate hinges on the unit(s) and level(s) at which evolution by natural selection operates. Biological structures are inherently hierarchical. As researchers we tend to focus on specific organisational levels, so community ecologists will have very different concerns and interests to cell biochemists. Biological structures are shaped by evolution but the question is at which level(s) in the biological hierarchy does natural selection act? The theory of natural selection is an abstract concept; as &lt;a href=&quot;http://en.wikipedia.org/wiki/Richard_Lewontin&quot;&gt;Lewontin&lt;/a&gt; describes, the tripartite conditions for evolution to occur are phenotypic variation, differential fitness and heritability. So which level of biological organisation satisfies these requirements? Well it seems like it depends on who you read and who influenced your evolution teachers!&lt;/p&gt;
-
-&lt;p&gt;In the UK and Ireland we are generally taught evolution from a gene-centric point of view – the Dawkins school of thinking in which selection acts at the level of the individual and the &lt;a href=&quot;http://en.wikipedia.org/wiki/The_Selfish_Gene&quot;&gt;unit of selection is the gene&lt;/a&gt;, and only the gene. However, across the pond, there seem to be more proponents and acceptors of higher or multi-level selection theory; the idea (following &lt;a href=&quot;http://en.wikipedia.org/wiki/Steven_M._Stanley&quot;&gt;Stanley&lt;/a&gt;, &lt;a href=&quot;http://en.wikipedia.org/wiki/Stephen_Jay_Gould&quot;&gt;Gould&lt;/a&gt; and &lt;a href=&quot;http://en.wikipedia.org/wiki/Niles_Eldredge&quot;&gt;Eldredge&lt;/a&gt; among others) that natural selection is not restricted to genes as the sole units of selection. It’s a confusing debate, especially when it comes to teasing apart the concepts of levels and units of selection; Okasha argues that a gene’s-eye view (genes as the units) can still be adopted for selection acting at various hierarchical levels. Furthermore, concepts of species level selection tend to become confused with &lt;a href=&quot;http://en.wikipedia.org/wiki/Group_selection&quot;&gt;group selection&lt;/a&gt; – a notoriously controversial concept which is guaranteed to set alarm bells ringing for many people.&lt;/p&gt;
-
-&lt;p&gt;Returning to Lewontin’s criteria, the basic idea of species level selection is simple. If species vary in some sort of traits and that variation gives rise to differential extinction or speciation rates, then some types of species will become more common than others. This approach is particularly common from palaeontological or macroevolutionary perspectives. If you’re interested in long-term evolutionary trends such as patterns of differential lineage abundances or extinction and speciation trends, it’s intuitive to treat the species as the level at which selection acts. This highlights a fundamental component of this debate: the gene-only-level of selection is usually advocated by microevolutionists; those who are interested in changes at the genetic level. In contrast, multilevel selection theory receives support from macroevolutionists who, due to their fundamentally different approaches, consider individual species to be their smallest units of interest.&lt;/p&gt;
-
-&lt;p&gt;When you think about species selection it is often easy to confound it with clade selection yet Okasha draws a clear distinction between the two concepts. Clades are, by definition, monophyletic; comprised of a single ancestral species and all of its descendant species. Unlike species, clades cannot split to create new clades with ancestor-descendant relationships because any new clade will inevitably be nested within the old clade (the diagram in Okasha’s book makes all of this far clearer than my description!)&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/Okasha2006-Fig7.1-300x224.png&quot; alt=&quot;_config.yml&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;Clade A is part of the larger clade B but it is not the offspring of clade B (offspring must have an independent existence from their parents and be able to outlive them).&lt;/p&gt;
-
-&lt;p&gt;Speciation and extinction rates are clearly not uniform; some lineages radiate into many different types of species which enjoy happy evolutionary lives (think of our arthropod-dominated world) while other evolutionary lineages produce fewer species. The question is whether these patterns are the result of species-level, macroevolutionary processes or whether emergent, species-level properties can be explained from selection acting at the genetic level. As an &amp;quot;acid test&amp;quot; for genuine species selection, Okasha proposes Elizabeth Vrba’s view that species selection must in principle (though not necessarily in practice) &amp;quot;be able to oppose selection at lower hierarchical levels&amp;quot;. Otherwise species level selection merely describes processes which can also be explained from a genetic-selection stance. For example, species selection may have been involved in the evolution or maintenance of sexual reproduction; the advantages of sexuality at the species level may have outweighed the &lt;a href=&quot;http://en.wikipedia.org/wiki/Evolution_of_sexual_reproduction#Two-fold_cost_of_sex&quot;&gt;two-fold cost of sex&lt;/a&gt; at the individual level and therefore favour the evolution of sexual over asexual lineages.&lt;/p&gt;
-
-&lt;p&gt;However, there seems to be a general paucity of clear examples which conform to Vrba’s acid test. One intriguing suggestion as to why this may be the case is time. The generation times of species producing new lineages are clearly far longer than the generation times of individuals’ reproduction so perhaps comparatively sluggish species selection processes have not had sufficient time to oppose evolutionary patterns which arise from individual selection?&lt;/p&gt;
-
-&lt;p&gt;Confused? It’s an interesting debate but certainly not one for the faint hearted and the fact that each philosopher/scientist/punter on the street seems to have jargon and slightly differing definitions of their own only serves to cloud the murky waters further. It is, however, interesting to contemplate how our own research backgrounds and the inclinations of our teachers influence our approach to the debate. If you’re interested in these kinds of questions then Okasha’s book is well worth the read or else you could join in with our Phylo/Macro journal club meeting; wherever you are in the world we’re on a Google+ hang out near you!&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Photo credit&lt;/strong&gt;: Okasha 2006, Evolution and the Levels of Selection&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://www.ecoevoblog.com/2014/02/03/levels-of-selection/&quot;&gt;Original post&lt;/a&gt; co-written with Sive Finlay (sfinlay[at]tcd.ie, @SiveFinlay)&lt;/strong&gt;&lt;/p&gt;
-</description>
-        <pubDate>Mon, 03 Feb 2014 00:00:00 +0000</pubDate>
-        <link>http://TGuillermeBlog.github.io/Levels-of-Selection/</link>
-        <guid isPermaLink="true">http://TGuillermeBlog.github.io/Levels-of-Selection/</guid>
-      </item>
-    
-      <item>
-        <title>A brave new world of monkeying around with trees</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/images/Tamarin_portrait_2_edit3-300x200.jpg&quot; alt=&quot;headimg&quot;&gt;
-I’ve spent the last few days writing an introduction for my first PhD paper on the practical issues of adding fossils to molecular phylogenies (&lt;a href=&quot;http://www.youtube.com/watch?feature=player_embedded&amp;amp;v=Y3ciaYSvbyU&quot;&gt;full recipe here&lt;/a&gt;).&lt;/p&gt;
-
-&lt;p&gt;This is my starting point: most people working in macroevolution agree that we should &lt;a href=&quot;http://onlinelibrary.wiley.com/doi/10.1111/mee3.2013.4.issue-8/issuetoc&quot;&gt;integrate fossils into modern phylogenetic trees&lt;/a&gt;. Of the many possible methods that are available, &lt;a href=&quot;http://sysbio.oxfordjournals.org/content/61/6/973.short&quot;&gt;Ronquist’s total evidence method&lt;/a&gt; looks to be the most promising (however, some &lt;a href=&quot;http://arxiv.org/abs/1310.2968&quot;&gt;nice other&lt;/a&gt; ones also exist).&lt;/p&gt;
-
-&lt;p&gt;Recently &lt;a href=&quot;http://onlinelibrary.wiley.com/doi/10.1111/jeb.12237/abstract&quot;&gt;Schrago et al.&lt;/a&gt; published a nice attempt to use this method on the Plathyrrini (New-World monkeys to you and me):&lt;/p&gt;
-
-&lt;p&gt;As a &lt;a href=&quot;http://www.ecoevoblog.com/2013/03/29/dinosaurs-are-useless-if-they-dont-go-in-trees/&quot;&gt;reminder&lt;/a&gt;, the aim of this total evidence method is to combine all of the available data: both molecular and morphological. Traditionally, analyses have treated each type of data separately; approaches which bring their own advantages and problems.&lt;/p&gt;
-
-&lt;p&gt;Let’s start with the molecules:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.sciencedirect.com/science/article/pii/S1055790305003817&quot;&gt;Opazo et al.&lt;/a&gt; published in 2006 a classical example of a molecular phylogenetics study. There are more recent, impressive phylogenetic studies (like &lt;a href=&quot;http://www.plosgenetics.org/article/info:doi/10.1371/journal.pgen.1001342&quot;&gt;Perelman et al.&lt;/a&gt; in 2011 and &lt;a href=&quot;http://www.plosone.org/article/info:doi/10.1371/journal.pone.0049521&quot;&gt;Springer et al.&lt;/a&gt; in 2012) on most of the primates and using more genetic data but I think Opazo is a better example of a traditional approach because it involves a tree with 17 taxa instead of more than 200.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/Opazo.et_.al2006-Fig5-264x300.png&quot; alt=&quot;_config.yml&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;Opazo et al. 2006 Fig. 5. A Platyrrhini dated phylogeny – values indicate the age of the nodes, the circle at the root of the tree is the fossil used for age calibration: Branisella.&lt;/p&gt;
-
-&lt;p&gt;Two of the main advantages of this approach are the quantity of data involved (tens of thousands base pairs) and the methods of inferring the evolutionary history: molecular evolutionary models are easy to understand and easy to implement (each site has a finite number of states – A, C, G, T or nothing – and &lt;a href=&quot;http://en.wikipedia.org/wiki/Models_of_DNA_evolution&quot;&gt;probabilistic models&lt;/a&gt; are good enough to infer the rate of changes from one state to the other). From a data perspective, another practical advantage is that, with modern &lt;a href=&quot;http://en.wikipedia.org/wiki/DNA_sequencing#Next-generation_methods&quot;&gt;NextGen sequencing&lt;/a&gt;, it’s really easy and fast to obtain a full genomic dataset. However, the main inconvenience from a macroevolutionary point of view is that molecular approaches don’t really take evidence from the fossil record into account. In the Opazo example, the only fossil used is &lt;a href=&quot;http://en.wikipedia.org/wiki/Branisella&quot;&gt;Branisella&lt;/a&gt;, and the only useful information here is just its age (around 26 Ma) used to calibrate the time on the tree.&lt;/p&gt;
-
-&lt;p&gt;On the other hand, &lt;a href=&quot;http://www.sciencedirect.com/science/article/pii/S004724840700187X&quot;&gt;Kay et al.&lt;/a&gt; 2008 published an awesome study of the Platyrrhini history from a palaeontological point of view. They focused on 20 living taxa combined with 11 fossil species and using 268 morphological characters.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/Kay.et_.al2008-Fig21-188x300.png&quot; alt=&quot;_config.yml&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;Kay et al. 2008 Fig. 21. A Platyrrhini phylogeny based on morphological data including fossils&lt;/p&gt;
-
-&lt;p&gt;Again, there are both advantages and problems associated with this approach. Firstly, the number of characters used is pretty low; don’t get me wrong, 268 is really good for a morphological matrix, it’s just low compared to molecular data. Furthermore, the underlying evolutionary models used to build the phylogeny are hard to infer, the most common model is the &lt;a href=&quot;http://sysbio.oxfordjournals.org/content/50/6/913.short&quot;&gt;Lewis 2001 Mk model&lt;/a&gt; where morphological characters are treated as if they &amp;quot;act like&amp;quot; molecular sites with no assumptions made about their states or rates of change (this method has been &lt;a href=&quot;http://onlinelibrary.wiley.com/doi/10.1111/cla.12018/full&quot;&gt;criticized&lt;/a&gt; but it’s still our best way to infer morphological evolution). Another solution, which is also commonly used, is to infer nothing but instead just use a &lt;a href=&quot;http://en.wikipedia.org/wiki/Maximum_parsimony_%28phylogenetics%29&quot;&gt;maximum parsimony approach&lt;/a&gt;: find the tree which explains observed phenotypic evolution with the fewest number of evolutionary steps (characters changing from one state to another on a particular node within the tree). However, compared to a purely molecular approach, the advantages of Kay’s tree are clear from a macroevolutionary point of view: this tree includes full information from the morphologies of both living and fossil species!&lt;/p&gt;
-
-&lt;p&gt;Now hopefully you can see where I’m coming from in wanting to use the total evidence method? It’s clear from the empirical examples above that the problems associated with one approach are the advantages in the other. So let’s just combine them! And that’s what Schrago did in their work, they just mixed both data sets and re-ran the analysis (or, more precisely, they used Kay’s data set as it was but added new genomic data collected over the last seven years to Opazo’s data set). Here’s their result:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/Schrago.et_.al2006-Fig2-300x236.png&quot; alt=&quot;_config.yml&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;Kay et al. 2008 Fig. 21. A Platyrrhini phylogeny based on morphological data including fossils&lt;/p&gt;
-
-&lt;p&gt;So here we have the advantage of both methods combined and this tree is far more user friendly for macroevolutionary studies; one can test evolutionary hypothesis through time using a more complete representation of the Platyrrhini evolutionary history. One major problem still remains though; the paucity of useful morphological data compared to the wealth of molecular data which is now available. Does that influence the tree’s topology somehow? Well, stay tuned, my simulations are running...&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Photo credit&lt;/strong&gt;: wikimedia commons&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://www.ecoevoblog.com/2014/01/13/a-brave-new-world-of-monkeying-around-with-trees/&quot;&gt;Original post&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-</description>
-        <pubDate>Mon, 13 Jan 2014 00:00:00 +0000</pubDate>
-        <link>http://TGuillermeBlog.github.io/A-Brave-new-world/</link>
-        <guid isPermaLink="true">http://TGuillermeBlog.github.io/A-Brave-new-world/</guid>
-      </item>
-    
-      <item>
-        <title>How do Lego cars evolve?</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/images/downloadE2979141711C7E66AA9DC037D0D66D3C-300x162.jpg&quot; alt=&quot;headimg&quot;&gt;
-The &lt;a href=&quot;https://www.eseb2013.com/&quot;&gt;ESEB&lt;/a&gt; conference this August in Lisbon was not only about &lt;em&gt;Drosophila&lt;/em&gt; and &lt;a href=&quot;http://en.wikipedia.org/wiki/Super_Bock&quot;&gt;#superbock&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Among the useful discussions and the interesting talks, a definite highlight came from our very own &lt;a href=&quot;http://www.tcd.ie/Zoology/research/research/theoretical/healy/healy.php&quot;&gt;Kilkenny scaling man&lt;/a&gt; all about &lt;a href=&quot;http://www.sciencedirect.com/science/article/pii/S0003347213003060&quot;&gt;time perception and comparative analysis&lt;/a&gt;... Argh no I missed that one – apparently there was even a realistic &lt;a href=&quot;http://en.wikipedia.org/wiki/Tiger_beetle&quot;&gt;Tiger Beetle&lt;/a&gt; hunting impression! There were at least eight overlapping talks at any one time and, as I had already seen Kevin’s talk, I went to listen to &lt;a href=&quot;http://www.bokmalab.net/&quot;&gt;Folmer Bokma&lt;/a&gt;’s insightful &lt;a href=&quot;https://www.eseb2013.com/delegates/fbokma&quot;&gt;talk&lt;/a&gt; instead.&lt;/p&gt;
-
-&lt;p&gt;I felt Bokma’s talk was a good follow-up to Gene Hunt’s &lt;a href=&quot;https://www.eseb2013.com/delegates/ghunt&quot;&gt;excellent talk&lt;/a&gt; on &lt;a href=&quot;http://en.wikipedia.org/wiki/Punctuated_equilibrium&quot;&gt;gradualism vs. stasis&lt;/a&gt; which he demonstrated through his careful study of the Ostracod fossil record, recently published in the excellent August issue of &lt;a href=&quot;http://onlinelibrary.wiley.com/doi/10.1111/2041-210X.12085/abstract&quot;&gt;Methods in Ecology and Evolution&lt;/a&gt;. By means of a lengthy introduction with citation of more or less unknown people such as &lt;a href=&quot;http://en.wikipedia.org/wiki/Hugh_Falconer&quot;&gt;H. Falconer&lt;/a&gt; and C. Darwin, Bokma emphasised the fact that examples of evolutionary stasis are well known from the fossil record and that ideas of species undergoing rapid adaptations that were not specifically linked to environmental changes have been around since the 19th century.&lt;/p&gt;
-
-&lt;p&gt;Bokma argued that trait co-adaptation is an important source of evolutionary changes. He cleverly illustrated this argument by means of a Lego car; I always think that using something other than just slides in a presentation greatly improves the talk! He argued that changes in colour or shape attributes can happen &amp;quot;easily&amp;quot; over a short evolutionary period as an adaptation to environmental changes. For example, characteristics of fur in &lt;em&gt;Vulpes &lt;a href=&quot;http://en.wikipedia.org/wiki/Red_fox&quot;&gt;vulpes&lt;/a&gt;/&lt;a href=&quot;http://en.wikipedia.org/wiki/White_fox&quot;&gt;lagopus&lt;/a&gt;&lt;/em&gt; foxes (the colour of the Lego car) or beak sizes in &lt;a href=&quot;http://en.wikipedia.org/wiki/Darwin_Finch&quot;&gt;Darwin’s finches&lt;/a&gt; (the windscreen of the Lego car) have evolved to increase the fitness of the individuals living in particular environmental conditions.&lt;/p&gt;
-
-&lt;p&gt;But things get trickier when it comes to major changes or adaptations. Bokma illustrated this idea by trying to change the overall shape of the car (like going from a regular car to a truck). As soon as he started to remove one wheel, the car totally lost its fitness! For non-Lego fans he also gave the example of enzymatic reactions in endotherms: if just one enzyme evolves to be more active at a temperature different to normal body temperature, then there is no increase in fitness for the organism (and probably a decrease as that precise enzyme will be less efficient). It is only when all enzymes co-evolve to be more active at a different body temperature that there might be an increase of fitness for an individual. Bokma used this example to emphasise the irreversibility of evolution and how lineages can get stuck in &amp;quot;evolutionary dead-ends&amp;quot;. In response to H. Falconer’s comment to Darwin (1862) that the Elephant remains &amp;quot;unchangeable &amp;amp; unchanged&amp;quot;, Bokma argued that it might be &amp;quot;easy&amp;quot; (in an evolutionary way) to become an elephant but once you’re there, climbing into trees or crawling underground becomes tricky. So for these bigger evolutionary changes (the &amp;quot;jumps&amp;quot; in punctuated equilibrium theory), one needs a &amp;quot;genetic revolution&amp;quot;; evolving from a flightless theropod to a turkey involves co-adaptation of more than just locomotory characters. There is a strong irreversibility component to evolution.&lt;/p&gt;
-
-&lt;p&gt;While some people were kind of miffed by Bokma’s talk and started a polite but energetic debate involving genetic mumbo jumbo, I just thought that his talk was a great illustration of the problem of stasis and jumps in evolution. As Gene Hunt demonstrated, evolutionary stasis and jumps are clearly dominant in the history of life but they are trickier to explain than gradualist evolution. However, to be objective I have to agree with some of the general comments on Bokma’s talk; &amp;quot;So what? We already knew that.&amp;quot; It reminded me of S.J. Gould’s excellent review on part of this idea in the &lt;a href=&quot;http://en.wikipedia.org/wiki/The_Panda%27s_Thumb:_More_Reflections_in_Natural_History&quot;&gt;&lt;em&gt;Panda’s Thumb&lt;/em&gt;&lt;/a&gt; (1980): The Return of the Hopeful Monster. So yes, we do already know about the ideas Bokma presented and he didn’t bring any staggering new insights but I believe he illustrated it with talent and brio! And perhaps I should mention that I can’t be completely objective here; I just love Lego, sorry.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Photo credit&lt;/strong&gt;: Thomas Guillerme.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://www.ecoevoblog.com/2013/11/04/how-do-lego-cars-evolve/&quot;&gt;Original post&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-</description>
-        <pubDate>Mon, 04 Nov 2013 00:00:00 +0000</pubDate>
-        <link>http://TGuillermeBlog.github.io/Lego-cars/</link>
-        <guid isPermaLink="true">http://TGuillermeBlog.github.io/Lego-cars/</guid>
-      </item>
-    
-      <item>
-        <title>A Raptor-ous Reception</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/images/IMG_5224-300x200.jpg&quot; alt=&quot;headimg&quot;&gt;
-Thanks to the &lt;a href=&quot;http://www.trinitysocieties.ie/society/104/zoological-society&quot;&gt;DU ZooSoc&lt;/a&gt;, TCD staff and students were treated to an exhibition from &lt;a href=&quot;http://www.dublinfalconry.com/&quot;&gt;Dublin Falconry&lt;/a&gt; last week.&lt;/p&gt;
-
-&lt;p&gt;Set against the busy backdrop of joggers and Pav-frequenters, six beautiful birds of prey were the stars of their own lunch time show. Here’s a few pictures from the event, just a flavour of the stunning animals which we were privileged to see, touch (and hear!) up close. And for the full effect, have a look at Keith McMahon’s beautiful &lt;a href=&quot;http://www.youtube.com/watch?v=AEbfH0wefbc&amp;amp;feature=youtu.be&quot;&gt;video&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/images/IMG_5224.jpg&quot;&gt;&lt;img src=&quot;/images/IMG_5224.jpg&quot; alt=&quot;bodyimg&quot;&gt;&lt;/a&gt;
-&lt;center&gt;Whooo’s a pretty boy then? Barn Owl.&lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/IMG_5285-215x300.jpg&quot; alt=&quot;bodyimg&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;Beautiful Scandinavian barn owl.&lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/IMG_5250-237x300.jpg&quot; alt=&quot;bodyimg&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;Mmm, tasty finger.&lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/IMG_5261-300x200.jpg&quot; alt=&quot;bodyimg&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;Protective sleeve put to good work.&lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/IMG_5217-210x300.jpg&quot; alt=&quot;bodyimg&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;Ready to take off... Peregrine falcon.&lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/IMG_5372-300x188.jpg&quot; alt=&quot;bodyimg&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;&amp;quot;I feel like chicken tonight...&amp;quot;&lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/IMG_5385-234x300.jpg&quot; alt=&quot;bodyimg&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;Juvenile Common buzzard – &amp;quot;If he looks like he’s coming towards you then duck!&amp;quot;&lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/images/IMG_5405-300x200.jpg&quot; alt=&quot;bodyimg&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;What paint brushes? Bengal eagle owl.&lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Photo credit&lt;/strong&gt;: Thomas Guillerme.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://www.ecoevoblog.com/2013/10/25/a-raptor-ous-reception/&quot;&gt;Original post&lt;/a&gt; writen by Sive Finlay, sfinlay[at]tcd.ie, @SiveFinlay&lt;/strong&gt;&lt;/p&gt;
-</description>
-        <pubDate>Fri, 25 Oct 2013 00:00:00 +0100</pubDate>
-        <link>http://TGuillermeBlog.github.io/A-raptorous-reception/</link>
-        <guid isPermaLink="true">http://TGuillermeBlog.github.io/A-raptorous-reception/</guid>
-      </item>
-    
-      <item>
-        <title>The Placental mammal saga; special summer double episode</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/images/Flickr_-_ggallice_-_Rodent-300x240.jpg&quot; alt=&quot;headimg&quot;&gt;
-As I wrote in a &lt;a href=&quot;http://www.ecoevoblog.com/2013/02/18/palaeo-poetry-and-placental-mammals/&quot;&gt;previous post&lt;/a&gt; last winter, &lt;a href=&quot;http://www.stonybrook.edu/sb/images/features/oleary130208.pdf&quot;&gt;O’Leary et al.&lt;/a&gt; added their oar into the Placental Mammal origins debate.&lt;/p&gt;
-
-&lt;p&gt;For anyone who missed that episode, they argued, with the backing of masses of morphological data, that placental mammal orders appeared right after the extinction of non-avian dinosaurs (also known as the explosive model). This was in opposition to two other views based on DNA data which argue that placentals appeared way before (long-fuse model) or slightly before (short-fuse model) the Mexican dinosaurs had to deal with some &lt;a href=&quot;http://en.wikipedia.org/wiki/Chicxulub_crater&quot;&gt;meteorite&lt;/a&gt;... Again, have a look at this &lt;a href=&quot;http://www.ecoevoblog.com/2013/02/18/palaeo-poetry-and-placental-mammals/&quot;&gt;previous post&lt;/a&gt; criticizing O’Leary et al.’s paper and how they &amp;quot;forgot&amp;quot; to use (ignored?) state-of-the-art phylogenetic inference methods.&lt;/p&gt;
-
-&lt;p&gt;While I was away feeding mosquitoes in Finland – and wondering whether the lack of fishes for dinner was due to my poor fishing skills or the absence of fishes in the river – Science published two new episodes of the placental saga. Of the two, &lt;a href=&quot;http://www.sciencemag.org/content/341/6146/613.2.full&quot;&gt;Springer et al.&lt;/a&gt; took the decision to properly criticize the methods of O’Leary et al.’s work. Amongst their detailed methods review, they particularly underlined the inaccuracy of O’Leary et al.’s explosive model; such a hypothesis would imply that the early placental mammals had a rate of molecular change similar to that of retroviruses. For over ten years it has been widely accepted that molecular rates (i.e. the number of DNA changes that are transmitted to descendants) vary among lineages through time. Knowing that, one can estimate these rates (or call it speed if you’re more comfortable with that) of evolution by calibrating phylogenetic trees with fossils. So, in this case, the amount of evolution needed to evolve from the late Cretaceous (~65 myr) non-placental mammals to the first placental mammals (~58 myr) has to be as high as evolutionary rates more characteristic of retroviruses to realistically explain this evolution.&lt;/p&gt;
-
-&lt;p&gt;Herein lies the eternal debate between palaeontologists and molecular biologists. The former base their estimations on the morphological changes they can see in the fossil record (even though some, as O’Leary et al. also include molecular data) while the latter calculate their evolutionary rate estimations on the molecular changes that they infer from living species’ DNA. Fundamentally, each method is valid but they are describing slightly different things ; palaeontologists infer the rates of changes between morphospecies (i.e. species that are separated based on their morphology) while molecular biologists study the rates of changes between surviving genetic pools (i.e. the populations leading to living species). My guess is that the true evolutionary history (i.e. the morphological and molecular changes of all the populations –fossils and living– through time) is to be found somewhere between these two approaches.&lt;/p&gt;
-
-&lt;p&gt;And that’s what I think O’Leary et al. demonstrated in their &lt;a href=&quot;http://www.sciencemag.org/content/341/6146/613.3.full&quot;&gt;response to Springer et al.’s comments&lt;/a&gt;. Through a kind of a dodgy answer in reply to the technical points that Springer et al. underlined as the “retrovirusesomorph” rates, O’Leary’s team reran the analysis and found that yes, maybe the explosive model is not very realistic regarding the molecular data but neither is the long-fuse model regarding the palaeontological data. So which one should we choose? Hmmm, why not just go for the middle way with the short-fuse model? OK let’s do that – without calling it a short-fuse model though (they called it an “explosive model” in figure 2-B but to my mind at least, it’s getting closer to the short-fuse one).&lt;/p&gt;
-
-&lt;p&gt;So all that for what? Nobody can either deny O’Leary et al.’s amazing work nor claim that the long-fuse model is realistic; the consensual short-fuse model remains pretty well supported among both moderate palaeontologists and molecular biologists. However, I still cherish this paper because it shows how I think good science should always work; find the two extreme scenarios and then study the median one…&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Photo credit&lt;/strong&gt;: Wikimedia commons.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;http://www.ecoevoblog.com/2013/10/18/the-placental-mammal-saga-special-summer-double-episode/&quot;&gt;Original post&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-</description>
-        <pubDate>Fri, 18 Oct 2013 00:00:00 +0100</pubDate>
-        <link>http://TGuillermeBlog.github.io/The-placental-mammal-saga/</link>
-        <guid isPermaLink="true">http://TGuillermeBlog.github.io/The-placental-mammal-saga/</guid>
       </item>
     
   </channel>
