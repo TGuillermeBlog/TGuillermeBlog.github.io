@@ -54,6 +54,8 @@ baseurl: ""
 #
 
 kramdown: redcarpet
+   input: GFM
+   hard_wrap: false
 highlighter: pygments
 permalink: /:title/
 
@@ -71,6 +73,8 @@ gems:
    - jekyll-redirect-from
    - jekyll-sitemap
    - jekyll-feed
+   - jekyll-coffeescript
+   - jekyll-paginate
 
 # Exclude these files from your production _site
 exclude:
@@ -79,3 +83,11 @@ exclude:
     - LICENSE
     - README.md
     - CNAME
+
+ lsi: false
+ safe: true
+ source: [your repo's top level directory]
+ incremental: false
+ highlighter: rouge
+ gist:
+   noscript: false
