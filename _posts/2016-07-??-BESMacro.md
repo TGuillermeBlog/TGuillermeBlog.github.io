@@ -47,7 +47,7 @@ One way to convey that is to be part or at least listen to the "hot" debates sha
 In this conference for example, we had two "official rants" by [Shai Meiri](http://shaimeirilab.weebly.com/) and [Adam Algar](https://twitter.com/acalgar) on what is going wrong in macroecology (but still how much cool work is done).
 
 And of course, the main ingredient is the attitude of the people towards the conference.
-As [Rich Grenyer](https://twitter.com/rich_) put it in his welcoming introduction: *"this conference is formally informal."*
+As [Rich Grenyer](https://twitter.com/rich_) put it in his welcoming introduction: "this conference is formally informal."
 
 Hope to see you at the next conference!
 
