@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Skeleton in the Closet – Blog backup – Backup blog posts from various blogs.</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="
+After a few ups and downs, everything you always wanted to know about the effect of missing data on recovering topology using a Total Evidence approach is now available online (Open Access)!
+
+" />
+    <meta property="og:description" content="
+After a few ups and downs, everything you always wanted to know about the effect of missing data on recovering topology using a Total Evidence approach is now available online (Open Access)!
+
+" />
+    
+    <meta name="author" content="Blog backup" />
+
+    
+    <meta property="og:title" content="The Skeleton in the Closet" />
+    <meta property="twitter:title" content="The Skeleton in the Closet" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Blog backup - Backup blog posts from various blogs." href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="https://raw.githubusercontent.com/TGuillermeBlog/TGuillermeBlog.github.io/master/images/antlers.jpg" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Blog backup</a></h1>
+            <p class="site-description">Backup blog posts from various blogs.</p>
+          </div>
+
+          <nav>
+            <!--
+            ADDING A PAGE
+            <a href="/your_new_page">The page name</a>
+            !-->
+            <a href="http://tguillerme.github.io/">Website</a>
+            <a href="/">Blog</a>
+            <a href="/about">About</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>The Skeleton in the Closet</h1>
+
+  <div class="entry">
+    <p><img src="/images/IMG_1618.JPG" alt="headimg" />
+After a few <a href="http://www.ecoevoblog.com/2014/10/13/phd-positive-happy-developments/">ups</a> and <a href="http://www.ecoevoblog.com/2014/10/06/phd-pretty-huge-disaster/">downs</a>, everything you always wanted to know about the effect of missing data on recovering topology using a Total Evidence approach is now <a href="http://www.sciencedirect.com/science/article/pii/S1055790315002547">available online (Open Access)</a>!</p>
+
+<p>This paper a treats many different questions that people might be interested in (Bayesian vs. ML; how to compare tree topologies; comparing entire distributions, not only their means and variance; and many more!) but I’ll leave it to you to discover it…</p>
+
+<p>Back on track, more than one an a half CPU centuries of calculation ago, <a href="http://nhcooper123.github.io/">Natalie</a> and myself wanted to build a <a href="http://www.ecoevoblog.com/2013/03/29/dinosaurs-are-useless-if-they-dont-go-in-trees/">Total Evidence tip-dated primates tree</a>. The <strong>Total Evidence method</strong> is the method that allows you to combine both living and fossil species (or actually, read “both molecular and morphological data”’’”) into the same phylogenies. The <strong>tip-dating method</strong>, is an additional method that uses the age of the tips rather than the age of the nodes for dating such a tree. But I’m not going to talk about that in this post.</p>
+
+<p>At the start of the project, we were both confident about the idea behind it and that primates would be the ideal group for such work since they are so well studied. A study that I described in a <a href="http://www.ecoevoblog.com/2014/01/13/a-brave-new-world-of-monkeying-around-with-trees/">former post</a> also came out around the same time, encouraging us and comforting us in this project.</p>
+
+<p>However, as you might guess, something went wrong, horribly wrong! For the Total Evidence method, we need molecular data for living species (<a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0049521">check</a>) morphological data for fossils species (<a href="http://www.nature.com/nature/journal/v498/n7452/full/nature12200.html">check</a>) and also for living species (che… No, wait)! After looking at the available data, we quickly found out that there was a crucial lack of living taxa with available morphological data (check our preprint to be submitted to Biology Letters putting the actual numbers on the problem). From that problem, rose the idea of actually testing how that would influence our analysis. And funnily enough, this problem become one of the two major parts of my PhD!</p>
+
+<p>Running thorough (and loooooong) simulations, we assessed the impact of missing data on topology when using a Total Evidence method. We looked at three parameters where data would be missing:</p>
+
+<ul>
+  <li>The first one, was obviously the one I introduced above: the <strong>number of living taxa with no available morphological data</strong> (at all!).</li>
+  <li>The second one, was the <strong>amount of available data in the fossil record</strong> (because yes, fossils can be a bit patchy).</li>
+  <li>And the third one, the <strong>overall amount of morphological characters</strong>.</li>
+</ul>
+
+<p>We then compared the effect of different levels of available data for each parameter individually and and their combination on recovering the correct topology, using both Maximum Likelihood and Bayesian Inference. For the correct topology, we used the tree that had no missing data in our simulations. For each parameter combination, we measured the clades in common between the correct topology and the trees with missing data as well as the placement of wild-card taxa (typically fossils jumping everywhere).</p>
+
+<p>Unsurprisingly, we found that the number of living taxa with no available morphological data was the most important parameter for recovering a good topology. In fact, once you go past 50% living taxa with no morphological data, the two other parameters have no effect at all, even if you have a perfect or a really bad fossil record or many or really few characters. This is kind of intuitive when you think about it because the only way to branch the fossils to living taxa is to use the morphological data. Therefore, if there are no morphological data for the living taxa, the fossils cannot branch with them regardless of the quality of the data. Therefore, in this paper, we argue that to improve our topologies in Total Evidence, we should visit more Natural History museums. And not only the exciting fossil collections but the well curated collections of living species as well!</p>
+
+<p>All the code for this paper is available on <a href="https://github.com/TGuillerme/Total_Evidence_Method-Missing_data">GitHub</a>.</p>
+
+<p>Check out the <a href="http://www.slideshare.net/ThomasGuillerme/total-evidence-phylogenies-the-missing-data-issue">latest presentation</a> about both papers.</p>
+
+<p><strong>Paper 1</strong>: Guillerme &amp; Cooper 2015 – E<em>ffects of missing data on topological inference using a Total Evidence approach</em> – Molecular Phylogenetic and Evolution (<a href="http://dx.doi.org/10.1016/j.ympev.2015.08.023">doi:10.1016/j.ympev.2015.08.023</a>).</p>
+
+<p><strong>Paper 2 (preprint)</strong>:  Guillerme &amp; Cooper 2015 – <em>Assessment of cladistic data availability for living mammals</em> – bioRxiv (<a href="http://biorxiv.org/content/early/2015/07/28/022970">doi: http://dx.doi.org/10.1101/022970</a>).</p>
+
+<p><strong>Photo credit</strong>: Thomas Guillerme (AMNH collections)</p>
+
+<p><strong><a href="http://www.ecoevoblog.com/2015/09/10/the-skeleton-in-the-closet/">Original post</a></strong></p>
+
+
+  </div>
+
+  <div class="date">
+    Written on July 21, 2016
+  </div>
+
+  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+
+
+
+<a href="https://github.com/TGuillerme/TGuillerme.github.io"><i class="svg-icon github"></i></a>
+
+
+
+
+<a href="https://www.twitter.com/TGuillerme"><i class="svg-icon twitter"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+  </body>
+</html>
