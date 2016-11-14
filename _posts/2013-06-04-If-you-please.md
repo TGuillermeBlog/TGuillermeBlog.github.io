@@ -14,23 +14,23 @@ It is always really interesting to look at all the work that has been done and p
 
 ![bodyimg]({{ site.baseurl }}/images/Mantells_Iguanodon_restoration-300x131.jpg)
 
-<center>[Mantell](http://en.wikipedia.org/wiki/Gideon_Mantell)‘s *Iguanodon* – 1825</center>
+<center> [Mantell](http://en.wikipedia.org/wiki/Gideon_Mantell) ‘s *Iguanodon* – 1825</center>
 
 ![bodyimg]({{ site.baseurl }}/images/800px-Goodrich_Iguanodon-300x202.jpg)
 
-<center>[Goodrich](http://en.wikipedia.org/wiki/Samuel_Griswold_Goodrich)‘s *Iguanodon* – 1859</center>
+<center> [Goodrich](http://en.wikipedia.org/wiki/Samuel_Griswold_Goodrich) ‘s *Iguanodon* – 1859</center>
 
 ![bodyimg]({{ site.baseurl }}/images/Iguanodon_Heinrich_Harder-300x187.jpg)
 
-<center>[Harder](http://en.wikipedia.org/wiki/Heinrich_Harder)‘s *Iguanodon* – 1916</center>
+<center> [Harder](http://en.wikipedia.org/wiki/Heinrich_Harder) ‘s *Iguanodon* – 1916</center>
 
 ![bodyimg]({{ site.baseurl }}/images/800px-Sketch_iguanodon-300x177.jpg)
 
-<center>[Bekaert](http://commons.wikimedia.org/wiki/User:Tbc#Dinosaur_sketches)‘s *Iguanodon* – 1995</center>
+<center> [Bekaert](http://commons.wikimedia.org/wiki/User:Tbc#Dinosaur_sketches )‘s *Iguanodon* – 1995</center>
 
 ![bodyimg]({{ site.baseurl }}/images/Iguanodon_NT-300x166.jpg)
 
-<center>[Tamura](http://paleoexhibit.blogspot.com/)‘s *Iguanodon* – 2012</center>
+<center> [Tamura](http://paleoexhibit.blogspot.com/) ‘s *Iguanodon* – 2012</center>
 
 But here I’d like to emphasize my love for what I think was the "golden age" of dinosaur pictorial art. I obviously want to refer to the work of artists like [Charles R. Knight](http://en.wikipedia.org/wiki/Charles_R._Knight) (1874:1953), [Zdeněk Burian](http://en.wikipedia.org/wiki/Zden%C4%9Bk_Burian) (1905:1981 – have a look at this awesome [online gallery](http://www.flickr.com/photos/timetravelnow/sets/72157626014578047/)) or [Rudolph F. Zallinger](http://en.wikipedia.org/wiki/Rudolph_F._Zallinger) (1919:1995). Their beautiful and (for their time) highly accurate scientific artwork was crucially import for bringing palaeontology into the public eye. This “golden age” was made possible by the upgrading of palaeontology to the status of a true science and the general acceptance of Darwin’s theory. Public interest in palaeontology at this time was also fueled by new fossil discoveries from expanding European colonies and the American frontier eventually leading to the most epic palaeo-story ever: the [Bone Wars](http://en.wikipedia.org/wiki/Bone_Wars) ([soon to be seen on HBO](http://www.deadline.com/tag/bone-wars/))!
 
