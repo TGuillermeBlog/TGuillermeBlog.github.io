@@ -58,4 +58,4 @@ Et voil&agrave;...
 
 **Photo credit**: Copyright [Andre Botha](mailto:andreb@ewt.org.za) 2015.
 
-**[Original post]()**
+**[Original post](https://aonsceal.github.io/blog/A-recipe-for-collaboration-post/)**
